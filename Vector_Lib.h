@@ -22,7 +22,10 @@ public:
     // Capacity functions -----------------------------------------------------
     int size();
     int capacity();
+    bool empty() const;
     // Element access ---------------------------------------------------------
+    V_Lib front();
+    V_Lib back();
 
     void print()
     {

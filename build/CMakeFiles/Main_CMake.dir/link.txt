@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libMain_CMake.a CMakeFiles/Main_CMake.dir/Vector_Lib.cpp.obj CMakeFiles/Main_CMake.dir/Studentas.cpp.obj CMakeFiles/Main_CMake.dir/main_vector.cpp.obj
+C:\msys64\ucrt64\bin\ranlib.exe libMain_CMake.a

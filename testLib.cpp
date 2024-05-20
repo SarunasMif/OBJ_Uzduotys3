@@ -5,6 +5,9 @@ using namespace std;
 
 int main() {
     Vector_Lib<int> v;
+
+    cout << v.empty() << endl;
+
     for (int i = 0; i < 5; i++) {
         v.push_back(i + 2);
     }
@@ -14,6 +17,8 @@ int main() {
     v.capacity();
     v.pop_back();
     v.print();
-    
+    cout << v.front() << endl;
+    cout << v.back() << endl;
+    cout << v.empty() << endl;
     system("pause");
 }
