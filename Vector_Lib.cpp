@@ -70,5 +70,10 @@ V_Lib Vector_Lib<V_Lib>::at(int index) {
     }
 }
 
+template <typename V_Lib>
+V_Lib& Vector_Lib<V_Lib>::operator[](int index) {
+    return arr[index];
+}
+
 template class Vector_Lib<int>;
 template class Vector_Lib<char>;

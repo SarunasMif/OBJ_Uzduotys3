@@ -32,5 +32,11 @@ TEST(Unit_Tests_VecLib_3, Mod_Test) {
     t1.push_back(3);
     EXPECT_EQ(t1.at(0), 3);
 
-    // TODO: ad opperators to change values at specific indexes (copy, move, replace)
+    EXPECT_EQ(t1[0], 3);
+
+    t1.push_back(2);
+    for (int i = 0; i < 2; i++) {
+        EXPECT_EQ(t1[i], 3 - i);
+    }
+    // TODO: ad opperators to change values at specific indexes (copy, move, set)
 }
