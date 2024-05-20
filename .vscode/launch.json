@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/OBJ_Uzduotys2",
-      "program": "c:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/OBJ_Uzduotys2/build/Debug/outDebug",
+      "cwd": "c:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3",
+      "program": "c:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
