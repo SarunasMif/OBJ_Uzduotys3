@@ -26,3 +26,11 @@ TEST(Unit_Tests_VecLib_2, Cap_Test) {
     EXPECT_FALSE(t1.empty());
     // Correctly allocates memory with elements
 }
+
+TEST(Unit_Tests_VecLib_3, Mod_Test) {
+    Vector_Lib<int> t1;
+    t1.push_back(3);
+    EXPECT_EQ(t1.at(0), 3);
+
+    // TODO: ad opperators to change values at specific indexes (copy, move, replace)
+}

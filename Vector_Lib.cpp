@@ -61,5 +61,14 @@ bool Vector_Lib<V_Lib>::empty() const {
     }
 }
 
+template <typename V_Lib>
+V_Lib Vector_Lib<V_Lib>::at(int index) {
+    if (index < current) {
+        return arr[index];
+    } else {
+        throw out_of_range("Index out of range!");
+    }
+}
+
 template class Vector_Lib<int>;
 template class Vector_Lib<char>;

@@ -1,14 +1,14 @@
-Start testing: May 20 19:18 FLE Daylight Time
+Start testing: May 20 19:28 FLE Daylight Time
 ----------------------------------------------------------
 1/1 Testing: Test_CMake
 1/1 Test: Test_CMake
 Command: "C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/build/Unit_Tests/Test_CMake.exe"
 Directory: C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/build/Unit_Tests
-"Test_CMake" start time: May 20 19:18 FLE Daylight Time
+"Test_CMake" start time: May 20 19:28 FLE Daylight Time
 Output:
 ----------------------------------------------------------
 Running main() from C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys3\googletest\googletest\src\gtest_main.cc
-[==========] Running 2 tests from 2 test suites.
+[==========] Running 3 tests from 3 test suites.
 [----------] Global test environment set-up.
 [----------] 1 test from Unit_Tests_VecLib_1
 [ RUN      ] Unit_Tests_VecLib_1.El_acc_Test
@@ -20,15 +20,20 @@ Running main() from C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys3\googletest\goo
 [       OK ] Unit_Tests_VecLib_2.Cap_Test (0 ms)
 [----------] 1 test from Unit_Tests_VecLib_2 (0 ms total)
 
+[----------] 1 test from Unit_Tests_VecLib_3
+[ RUN      ] Unit_Tests_VecLib_3.Mod_Test
+[       OK ] Unit_Tests_VecLib_3.Mod_Test (0 ms)
+[----------] 1 test from Unit_Tests_VecLib_3 (0 ms total)
+
 [----------] Global test environment tear-down
-[==========] 2 tests from 2 test suites ran. (0 ms total)
-[  PASSED  ] 2 tests.
+[==========] 3 tests from 3 test suites ran. (0 ms total)
+[  PASSED  ] 3 tests.
 <end of output>
-Test time =   0.05 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"Test_CMake" end time: May 20 19:18 FLE Daylight Time
+"Test_CMake" end time: May 20 19:28 FLE Daylight Time
 "Test_CMake" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 20 19:18 FLE Daylight Time
+End testing: May 20 19:28 FLE Daylight Time

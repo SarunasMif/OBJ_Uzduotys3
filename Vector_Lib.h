@@ -31,6 +31,9 @@ public:
     // Element access ---------------------------------------------------------
     V_Lib front();
     V_Lib back();
+    V_Lib at(int index);
+    V_Lib a();
+    V_Lib b();
 
     void print()
     {
