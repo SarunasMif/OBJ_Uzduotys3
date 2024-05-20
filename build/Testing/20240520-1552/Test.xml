@@ -21,11 +21,11 @@
 	TotalVirtualMemory="37578"
 	TotalPhysicalMemory="32714"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="3693"
+	ProcessorClockFrequency="3701"
 	>
 	<Testing>
-		<StartDateTime>May 20 18:52 FLE Daylight Time</StartDateTime>
-		<StartTestTime>1716220358</StartTestTime>
+		<StartDateTime>May 20 19:18 FLE Daylight Time</StartDateTime>
+		<StartTestTime>1716221902</StartTestTime>
 		<TestList>
 			<Test>./Unit_Tests/Test_CMake</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys3\build\Unit_Tests\Test_CMake.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0772579</Value>
+					<Value>0.0535051</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -51,12 +51,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJyVUMFOwzAMvecrfFwPrZh2Q+LANjQ0JDZ19NRUVdaFKqJ1UOyAxtfTLNO0IUDwTi/2i5+fc49osIVeGRwl8OxsD7NrWZB2JKk1L3s5t43vNTLJheF7v5Wr6bIuPnbe8p4msrW27TRr4nNKrpFtYHWYnDWNKG9OqCA/2o4haKLtkZM3rDNRpidUsOjsVnWxr/HNOIthIyDNqX/9Ij6fWaDh+ml4Uj3rFFE9FiXkxSMcUH3Tz9bTQ2HQRaweftXB6Ap6Sv6zQvwCbFl1ifhbUtbKpTv7jpd3/Ol+4BRmlz5DnvXtZnM3D7mjNhOfzd6lDg==</Value>
+					<Value encoding="base64" compression="gzip">eJydkstOwzAQRff5ilk2i1g07JBYQFsVAaIoJWziyHJcE1kkduUHqHw9cVz1gSilnY3H1pm5c+XJnJRC1tBSIQcxvGnVwugK54Zrg00t3ld4rJhrubQGT4W9cxWe3d6T/GvhlF2ZS1wrVTfccmN3U6MZrn1GfGfEWFRcb6KEbC2bgmdM0A0XME50J4qKZBMlTBtV0SYAXH4IraSfCQy3iVv+gIeB65vmUljy4kXIK2ePoiLDqIAsf4I+yt8ANGkIZax/7eAQs4fjMAwuoDXxSdOEGrDK0iaOTilNjxlJ0Ygu/+ViS55hIf3LwqGPs5zqZKE+5f5iHF4I0FSifaXO1PPNfD4Ze/vrShR9A//E5ws=</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>May 20 18:52 FLE Daylight Time</EndDateTime>
-		<EndTestTime>1716220358</EndTestTime>
+		<EndDateTime>May 20 19:18 FLE Daylight Time</EndDateTime>
+		<EndTestTime>1716221902</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

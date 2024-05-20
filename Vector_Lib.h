@@ -16,6 +16,11 @@ public:
     Vector_Lib(){arr = new V_Lib[1]; Capacity = 1; current = 0;} // Constructor
     ~Vector_Lib() { delete[] arr; } // Deconstructor
 
+    // int Le_Capacity() const { return Capacity;}
+    // int Le_current() const { return current;}
+    // V_Lib Le_arr() const { return arr;}
+    // Getters
+
     // Modifiers functions ----------------------------------------------------
     void push_back(V_Lib data);
     void pop_back();

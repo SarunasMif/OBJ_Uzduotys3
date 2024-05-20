@@ -13,8 +13,8 @@ int main() {
     }
 
     v.print();
-    v.size();
-    v.capacity();
+    cout << v.size() << endl;
+    cout << v.capacity() << endl;
     v.pop_back();
     v.print();
     cout << v.front() << endl;
