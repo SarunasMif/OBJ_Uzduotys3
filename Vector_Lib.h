@@ -2,6 +2,8 @@
 #define VECTOR_LIB_H
 
 #include "includes.h"
+#include <limits>
+#include <algorithm>
 
 using namespace std;
 
@@ -25,20 +27,63 @@ public:
     // V_Lib Le_arr() const { return arr;}
     // Getters
 
-    // Modifiers functions ----------------------------------------------------
+    // Modifiers functions ---------------------------------------------------- 3/11
     void push_back(V_Lib data);
     void pop_back();
     void clear();
-    // Capacity functions -----------------------------------------------------
+    // Capacity functions ----------------------------------------------------- 6/6
     int size();
     int capacity();
     bool empty() const;
-    // Element access ---------------------------------------------------------
+    void reserve(int size);
+    void shrink_to_fit();
+    static size_t max_size();
+    // Element access --------------------------------------------------------- 4/5
     V_Lib front();
     V_Lib back();
-    V_Lib at(int index);
+    V_Lib& at(int index);
     V_Lib& operator[](int index);
     // data functions kai issiaikinsiu ka ji daro
+    // Iterators -------------------------------------------------------------- 0/4
+    class Iterator {
+        private:
+            V_Lib* ptr;
+        public:
+            Iterator(V_Lib* p) : ptr(p) {} // Constructor
+
+            V_Lib& operator*() const {
+                return *ptr;
+            }
+
+            Iterator& operator++() {
+                ++ptr;
+                return *this;
+            }
+
+            bool operator==(const Iterator& other) const {
+                return ptr == other.ptr;
+            }
+
+            bool operator!=(const Iterator& other) const {
+                return ptr != other.ptr;
+            }
+    };
+
+    Iterator begin() const {
+        return Iterator(arr);
+    }
+
+    Iterator end() const {
+        return Iterator(arr + current);
+    }
+
+    Iterator rbegin() const {
+        return Iterator(arr + current - 1);
+    }
+
+    Iterator rend() const {
+        return Iterator(arr - 1);
+    }
 
     void print()
     {

@@ -31,6 +31,28 @@ TEST(Unit_Tests_VecLib_2, Cap_Test) {
     EXPECT_EQ(t1.capacity(), 4);
     EXPECT_FALSE(t1.empty());
     // Correctly allocates memory with elements
+
+    t1.reserve(10);
+    EXPECT_EQ(t1.capacity(), 10);
+
+    Vector_Lib<int> t2;
+
+    t2.reserve(3);
+    t2.push_back(1);
+    t2.push_back(2);
+    t2.shrink_to_fit();
+
+    EXPECT_EQ(t2.capacity(), 2);
+
+    t2.clear();
+    t2.shrink_to_fit();
+
+    EXPECT_EQ(t2.capacity(), 1);
+
+    t2.push_back(1);
+
+    EXPECT_EQ(t2.capacity(), 1);
+
 }
 
 TEST(Unit_Tests_VecLib_3, Mod_Test) {
@@ -44,6 +66,9 @@ TEST(Unit_Tests_VecLib_3, Mod_Test) {
     for (int i = 0; i < 2; i++) {
         EXPECT_EQ(t1[i], 3 - i);
     }
+
+    t1.at(0) = 10;
+    EXPECT_EQ(t1[0], 10);
     // TODO: ad opperators to change values at specific indexes (copy, move, set)
 }
 
@@ -81,4 +106,19 @@ TEST(Unit_Test_VecLib5, MovCon_Test) {
     EXPECT_TRUE(t1.empty());
     EXPECT_EQ(t1.capacity(), 1);
 
+}
+
+TEST(Unite_Test_VecLib6, Iter_Test) {
+    Vector_Lib<int> t1;
+
+    for (int i = 0; i < 5; i++) {
+        t1.push_back(i + 1);
+    }
+
+    int y = 1;
+    for (int value : t1) {
+        EXPECT_EQ(value, y);
+        y++;
+    }
+    
 }

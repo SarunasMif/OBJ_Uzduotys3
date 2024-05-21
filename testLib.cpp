@@ -1,24 +1,24 @@
-#include <iostream>
 #include "Vector_Lib.h"
-
-using namespace std;
+#include <iostream>
 
 int main() {
-    Vector_Lib<int> v;
+    Vector_Lib<int> vec;
+    std::cout << "Max size of int vector: " << vec.max_size() << std::endl;
 
-    cout << v.empty() << endl;
+    Vector_Lib<double> vecDouble;
+    std::cout << "Max size of double vector: " << vecDouble.max_size() << std::endl;
 
-    for (int i = 0; i < 5; i++) {
-        v.push_back(i + 2);
+
+    Vector_Lib<int> vec;
+    vec.push_back(1);
+    vec.push_back(2);
+    vec.push_back(3);
+
+    for (int value : vec) {
+        cout << value << " ";
     }
 
-    v.print();
-    cout << v.size() << endl;
-    cout << v.capacity() << endl;
-    v.pop_back();
-    v.print();
-    cout << v.front() << endl;
-    cout << v.back() << endl;
-    cout << v.empty() << endl;
     system("pause");
+
+    return 0;
 }

@@ -69,7 +69,7 @@ bool Vector_Lib<V_Lib>::empty() const {
 }
 
 template <typename V_Lib>
-V_Lib Vector_Lib<V_Lib>::at(int index) {
+V_Lib& Vector_Lib<V_Lib>::at(int index) {
     if (index < current) {
         return arr[index];
     } else {
@@ -138,5 +138,30 @@ Vector_Lib<V_Lib>& Vector_Lib<V_Lib>::operator=(Vector_Lib&& Adata) noexcept {
     return *this;
 }
 
+template <typename V_Lib>
+void Vector_Lib<V_Lib>::reserve(int size) {
+    if (size < 0 || size == 0) {
+        throw out_of_range("Index out of range!");
+    } else {
+        Capacity = size;
+    }
+}
+
+template <typename V_Lib>
+void Vector_Lib<V_Lib>::shrink_to_fit() {
+    if (current == 0) {
+        Capacity = 1;
+    }
+    else if (current > 0) {
+        Capacity = current;
+    }
+}
+
+template <typename V_Lib>
+size_t  Vector_Lib<V_Lib>::max_size() {
+    return numeric_limits<size_t>::max() / sizeof(V_Lib);
+}
+
 template class Vector_Lib<int>;
 template class Vector_Lib<char>;
+template class Vector_Lib<double>;
