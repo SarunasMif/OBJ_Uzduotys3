@@ -166,6 +166,32 @@ template <typename V_Lib>
 V_Lib* Vector_Lib<V_Lib>::data() const {
     return arr;
 }
+
+template <typename V_Lib>
+void Vector_Lib<V_Lib>::erase(size_t pos) {
+    if (pos < 0 || pos > current) {
+        throw out_of_range("Index out of range!");
+    } else {
+        for (size_t i = pos; i < current - 1; i++) {
+            arr[i] = arr[i - 1];
+        }
+
+        current--;
+    }
+}
+
+template <typename V_Lib>
+void Vector_Lib<V_Lib>::erase(size_t start, size_t end) {
+    if (start > end || start < 0 || end > current || start > current) {
+        throw out_of_range("Index out of range!");
+    } else {
+        for (size_t i = start; i < current - (end - start + 1); i++) {
+            arr[i] = arr[i - (end - start + 1)];
+        }
+
+        current--;
+    }
+}
 template class Vector_Lib<int>;
 template class Vector_Lib<char>;
 template class Vector_Lib<double>;

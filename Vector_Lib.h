@@ -27,10 +27,12 @@ public:
     // V_Lib Le_arr() const { return arr;}
     // Getters
 
-    // Modifiers functions ---------------------------------------------------- 3/11
+    // Modifiers functions ---------------------------------------------------- 4/11
     void push_back(V_Lib data);
     void pop_back();
     void clear();
+    void erase(size_t pos);
+    void erase(size_t start, size_t end);
     // Capacity functions ----------------------------------------------------- 6/6
     int size();
     int capacity();
@@ -38,7 +40,7 @@ public:
     void reserve(int size);
     void shrink_to_fit();
     static size_t max_size();
-    // Element access --------------------------------------------------------- 4/5
+    // Element access --------------------------------------------------------- 5/5
     V_Lib front();
     V_Lib back();
     V_Lib& at(int index);

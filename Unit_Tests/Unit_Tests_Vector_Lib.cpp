@@ -80,7 +80,22 @@ TEST(Unit_Tests_VecLib_3, Mod_Test) {
 
     t1.at(0) = 10;
     EXPECT_EQ(t1[0], 10);
-    // TODO: ad opperators to change values at specific indexes (copy, move, set)
+    
+    Vector_Lib<int> t2;
+
+    for (int i = 0; i < 5; i++) {
+        t2.push_back(i + 1);
+    }
+
+    t2.erase(4);
+
+    for (int i = 0; i < 4; i++) {
+        EXPECT_EQ(t2[i], i + 1);
+    }
+
+    t2.erase(1, 3);
+
+    EXPECT_EQ(t2[0], 1);
 }
 
 TEST(Unit__Test_VecLib_4, CopCon_Test) {
