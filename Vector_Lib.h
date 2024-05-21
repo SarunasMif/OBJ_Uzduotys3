@@ -43,8 +43,8 @@ public:
     V_Lib back();
     V_Lib& at(int index);
     V_Lib& operator[](int index);
-    // data functions kai issiaikinsiu ka ji daro
-    // Iterators -------------------------------------------------------------- 0/4
+    V_Lib* data() const;
+    // Iterators -------------------------------------------------------------- 4/4
     class Iterator {
         private:
             V_Lib* ptr;

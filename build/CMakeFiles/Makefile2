@@ -307,8 +307,8 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 # Target rules for target Unit_Tests/CMakeFiles/Test_CMake.dir
 
 # All Build rule for target.
-Unit_Tests/CMakeFiles/Test_CMake.dir/all: CMakeFiles/Main_CMake.dir/all
 Unit_Tests/CMakeFiles/Test_CMake.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+Unit_Tests/CMakeFiles/Test_CMake.dir/all: CMakeFiles/Main_CMake.dir/all
 Unit_Tests/CMakeFiles/Test_CMake.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f Unit_Tests\CMakeFiles\Test_CMake.dir\build.make Unit_Tests/CMakeFiles/Test_CMake.dir/depend
 	$(MAKE) $(MAKESILENT) -f Unit_Tests\CMakeFiles\Test_CMake.dir\build.make Unit_Tests/CMakeFiles/Test_CMake.dir/build

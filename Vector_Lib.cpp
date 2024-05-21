@@ -162,6 +162,10 @@ size_t  Vector_Lib<V_Lib>::max_size() {
     return numeric_limits<size_t>::max() / sizeof(V_Lib);
 }
 
+template <typename V_Lib>
+V_Lib* Vector_Lib<V_Lib>::data() const {
+    return arr;
+}
 template class Vector_Lib<int>;
 template class Vector_Lib<char>;
 template class Vector_Lib<double>;

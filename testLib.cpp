@@ -1,5 +1,6 @@
 #include "Vector_Lib.h"
 #include <iostream>
+#include <span>
 
 int main() {
     Vector_Lib<int> vec;
@@ -17,6 +18,8 @@ int main() {
     for (int value : vec) {
         cout << value << " ";
     }
+
+    int* arr = vec.data();
 
     system("pause");
 

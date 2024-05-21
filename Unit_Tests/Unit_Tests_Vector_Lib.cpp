@@ -14,6 +14,17 @@ TEST(Unit_Tests_VecLib_1, El_acc_Test) {
     EXPECT_EQ(t1.capacity(), 2);
     EXPECT_EQ(t1.size(), 0);
     EXPECT_TRUE(t1.empty());
+
+    for (int i = 0; i < 5; i++) {
+        t1.push_back(i + 1);
+    }
+
+    int* t_arr = t1.data();
+
+    ASSERT_NE(t_arr, nullptr);
+    for (int y = 0; y < 5; y++) {
+        EXPECT_EQ(t_arr[y], y + 1);
+    }
 }
 
 TEST(Unit_Tests_VecLib_2, Cap_Test) {
