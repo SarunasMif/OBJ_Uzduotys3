@@ -8,6 +8,12 @@ TEST(Unit_Tests_VecLib_1, El_acc_Test) {
 
     EXPECT_EQ(t1.front(), 1);
     EXPECT_EQ(t1.back(), 2);
+
+    t1.clear();
+
+    EXPECT_EQ(t1.capacity(), 2);
+    EXPECT_EQ(t1.size(), 0);
+    EXPECT_TRUE(t1.empty());
 }
 
 TEST(Unit_Tests_VecLib_2, Cap_Test) {
@@ -41,7 +47,7 @@ TEST(Unit_Tests_VecLib_3, Mod_Test) {
     // TODO: ad opperators to change values at specific indexes (copy, move, set)
 }
 
-TEST(Uni__Test_VecLib_4, CopCon_Test) {
+TEST(Unit__Test_VecLib_4, CopCon_Test) {
     Vector_Lib<int> t1;
     
     for (int i = 0; i < 5; i++) {
@@ -55,4 +61,24 @@ TEST(Uni__Test_VecLib_4, CopCon_Test) {
     for (int y = 0; y < 5; y++) {
         EXPECT_EQ(t1[y], t2[y]);
     }
+}
+
+TEST(Unit_Test_VecLib5, MovCon_Test) {
+    Vector_Lib<int> t1;
+
+    for (int i = 0; i < 5; i++) {
+        t1.push_back(i + 2);
+    }
+
+    Vector_Lib<int> t2;
+
+    t2 = move(t1);
+
+    for (int y = 0; y < 5; y++) {
+        EXPECT_EQ(t2[y], y + 2);
+    }
+
+    EXPECT_TRUE(t1.empty());
+    EXPECT_EQ(t1.capacity(), 1);
+
 }

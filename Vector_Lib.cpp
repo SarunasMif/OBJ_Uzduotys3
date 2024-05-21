@@ -35,6 +35,13 @@ void Vector_Lib<V_Lib>::pop_back() {
 }
 
 template <typename V_Lib>
+void Vector_Lib<V_Lib>::clear() {
+    delete[] arr;
+    arr = new V_Lib[1];
+    current = 0;
+}
+
+template <typename V_Lib>
 V_Lib Vector_Lib<V_Lib>::front() {
     if (Capacity == 0) {
         throw out_of_range("Index out of range!");
@@ -102,6 +109,30 @@ Vector_Lib<V_Lib>& Vector_Lib<V_Lib>::operator=(const Vector_Lib& Adata) {
 
     for (int i = 0; i < current; i++) {
         arr[i] = Adata.arr[i];
+    }
+
+    return *this;
+}
+
+template <typename V_Lib>
+Vector_Lib<V_Lib>::Vector_Lib(Vector_Lib&& Adata) noexcept : arr(Adata.arr), Capacity(Adata.Capacity), current(Adata.current) {
+   Adata.arr = nullptr;
+   Adata.Capacity = 1;
+   Adata.current = 0;
+}
+
+template <typename V_Lib>
+Vector_Lib<V_Lib>& Vector_Lib<V_Lib>::operator=(Vector_Lib&& Adata) noexcept {
+    if (this != &Adata) {
+        delete[] arr;
+
+        arr = Adata.arr;
+        Capacity = Adata.Capacity;
+        current = Adata.current;
+
+        Adata.arr = nullptr;
+        Adata.Capacity = 1;
+        Adata.current = 0;
     }
 
     return *this;

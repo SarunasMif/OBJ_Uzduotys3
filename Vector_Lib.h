@@ -17,8 +17,8 @@ public:
     ~Vector_Lib() { delete[] arr; } // Deconstructor
     Vector_Lib(const Vector_Lib& Adata); // Copy constructor
     Vector_Lib<V_Lib>& operator=(const Vector_Lib& Adata); // Copy assignment
-    Vector_Lib(const Vector_Lib&& Adata) noexcept;
-    Vector_Lib& operator=(const Vector_Lib&& Adata) noexcept;
+    Vector_Lib(Vector_Lib&& Adata) noexcept; // Move constructor
+    Vector_Lib<V_Lib>& operator=(Vector_Lib&& Adata) noexcept; //Move assignment
 
     // int Le_Capacity() const { return Capacity;}
     // int Le_current() const { return current;}
@@ -28,6 +28,7 @@ public:
     // Modifiers functions ----------------------------------------------------
     void push_back(V_Lib data);
     void pop_back();
+    void clear();
     // Capacity functions -----------------------------------------------------
     int size();
     int capacity();
