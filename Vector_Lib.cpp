@@ -72,7 +72,39 @@ V_Lib Vector_Lib<V_Lib>::at(int index) {
 
 template <typename V_Lib>
 V_Lib& Vector_Lib<V_Lib>::operator[](int index) {
-    return arr[index];
+    if (index < 0 || index >= current) {
+        throw out_of_range("Index out of range!");
+    } else {
+        return arr[index];
+    }
+}
+
+template <typename V_Lib>
+Vector_Lib<V_Lib>::Vector_Lib(const Vector_Lib& Adata) : Capacity(Adata.Capacity), current(Adata.current) {
+    arr = new V_Lib[Capacity];
+
+    for (int i = 0; i < current; i++) {
+        arr[i] = Adata.arr[i];
+    }
+}
+
+template <typename V_Lib>
+Vector_Lib<V_Lib>& Vector_Lib<V_Lib>::operator=(const Vector_Lib& Adata) {
+    if (this == &Adata) {
+        return *this;
+    }
+
+    delete[] arr;
+
+    Capacity = Adata.Capacity;
+    current = Adata.current;
+    arr = new V_Lib[Capacity];
+
+    for (int i = 0; i < current; i++) {
+        arr[i] = Adata.arr[i];
+    }
+
+    return *this;
 }
 
 template class Vector_Lib<int>;

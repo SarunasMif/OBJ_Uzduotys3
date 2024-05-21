@@ -40,3 +40,19 @@ TEST(Unit_Tests_VecLib_3, Mod_Test) {
     }
     // TODO: ad opperators to change values at specific indexes (copy, move, set)
 }
+
+TEST(Uni__Test_VecLib_4, CopCon_Test) {
+    Vector_Lib<int> t1;
+    
+    for (int i = 0; i < 5; i++) {
+        t1.push_back(i + 2);
+    }
+
+    Vector_Lib<int> t2;
+
+    t2 = t1;
+
+    for (int y = 0; y < 5; y++) {
+        EXPECT_EQ(t1[y], t2[y]);
+    }
+}

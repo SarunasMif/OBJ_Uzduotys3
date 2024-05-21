@@ -15,6 +15,10 @@ class Vector_Lib {
 public:
     Vector_Lib(){arr = new V_Lib[1]; Capacity = 1; current = 0;} // Constructor
     ~Vector_Lib() { delete[] arr; } // Deconstructor
+    Vector_Lib(const Vector_Lib& Adata); // Copy constructor
+    Vector_Lib<V_Lib>& operator=(const Vector_Lib& Adata); // Copy assignment
+    Vector_Lib(const Vector_Lib&& Adata) noexcept;
+    Vector_Lib& operator=(const Vector_Lib&& Adata) noexcept;
 
     // int Le_Capacity() const { return Capacity;}
     // int Le_current() const { return current;}
@@ -33,7 +37,7 @@ public:
     V_Lib back();
     V_Lib at(int index);
     V_Lib& operator[](int index);
-    V_Lib b();
+    // data functions kai issiaikinsiu ka ji daro
 
     void print()
     {
