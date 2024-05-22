@@ -249,38 +249,6 @@ void Vector_Lib<V_Lib>::insert(size_t pos, int number, const V_Lib& stuff) {
     
 }
 
-// template <typename V_Lib>
-// template <typename InputIt>
-// void Vector_Lib<V_Lib>::insert(const size_t pos, InputIt first, InputIt last) {
-//     if (pos < 0 || pos > current) {
-//         throw out_of_range("Index out of range!");
-//     } 
-
-//     size_t n_el = distance(first, last);
-//     size_t new_capacity = current + n_el;
-
-//     V_Lib* temp = new V_Lib[new_capacity];
-
-//     for (size_t i = 0; i < pos; i++) {
-//          temp[i] = arr[i];
-//     }
-
-//     size_t possition = pos;
-//     for (InputIt index = first; index != last; index++) {
-//         temp[possition++] = *index;
-//     }
-
-//     for (size_t i = possition; i < current; i++) {
-//         temp[possition] = arr[i];
-//     }
-
-//     delete[] arr;
-//     arr = temp;
-//     Capacity = new_capacity;
-//     current = new_capacity;
-    
-// }
-
 template <typename V_Lib>
 void Vector_Lib<V_Lib>::resize(int size) {
     if (size < 0) {
@@ -349,6 +317,13 @@ void Vector_Lib<V_Lib>::resize(int size, int filler) {
             current = new_capacity;
         }
     }
+}
+
+template <typename V_Lib>
+void Vector_Lib<V_Lib>::swap(Vector_Lib<V_Lib>& vector) {
+    std::swap(arr, vector.arr);
+    std::swap(Capacity, vector.Capacity);
+    std::swap(current, vector.current);
 }
 template class Vector_Lib<int>;
 template class Vector_Lib<char>;

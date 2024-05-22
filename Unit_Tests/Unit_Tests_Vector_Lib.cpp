@@ -109,16 +109,16 @@ TEST(Unit_Tests_VecLib_3, Mod_Test) {
     EXPECT_EQ(t3[1], 3) << "test 2" << endl;
     EXPECT_EQ(t3[2], 3) << "test 3" << endl;
 
-    // Vector_Lib<int> in;
+    Vector_Lib<int> in;
 
-    // for (int i = 0; i < 3; i++) {
-    //     in.push_back(i + 1);
-    // }
+    for (int i = 0; i < 3; i++) {
+        in.push_back(i + 1);
+    }
 
-    // t3.insert(0, in.begin(), in.end());
+    t3.insert(0, in.begin(), in.end());
 
-    // EXPECT_EQ(t3[0], 1);
-    // EXPECT_EQ(t3[1], 2);
+    EXPECT_EQ(t3[0], 1);
+    EXPECT_EQ(t3[1], 2);
 
     Vector_Lib<int> t4;
 
