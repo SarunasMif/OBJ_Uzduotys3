@@ -1,14 +1,14 @@
-Start testing: May 20 21:54 FLE Daylight Time
+Start testing: May 22 16:45 FLE Daylight Time
 ----------------------------------------------------------
 1/1 Testing: Test_CMake
 1/1 Test: Test_CMake
 Command: "C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/build/Unit_Tests/Test_CMake.exe"
 Directory: C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/build/Unit_Tests
-"Test_CMake" start time: May 20 21:54 FLE Daylight Time
+"Test_CMake" start time: May 22 16:45 FLE Daylight Time
 Output:
 ----------------------------------------------------------
 Running main() from C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys3\googletest\googletest\src\gtest_main.cc
-[==========] Running 3 tests from 3 test suites.
+[==========] Running 5 tests from 5 test suites.
 [----------] Global test environment set-up.
 [----------] 1 test from Unit_Tests_VecLib_1
 [ RUN      ] Unit_Tests_VecLib_1.El_acc_Test
@@ -25,15 +25,25 @@ Running main() from C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys3\googletest\goo
 [       OK ] Unit_Tests_VecLib_3.Mod_Test (0 ms)
 [----------] 1 test from Unit_Tests_VecLib_3 (0 ms total)
 
+[----------] 1 test from Unit__Test_VecLib_4
+[ RUN      ] Unit__Test_VecLib_4.CopCon_Test
+[       OK ] Unit__Test_VecLib_4.CopCon_Test (0 ms)
+[----------] 1 test from Unit__Test_VecLib_4 (0 ms total)
+
+[----------] 1 test from Unit_Test_VecLib5
+[ RUN      ] Unit_Test_VecLib5.MovCon_Test
+[       OK ] Unit_Test_VecLib5.MovCon_Test (0 ms)
+[----------] 1 test from Unit_Test_VecLib5 (0 ms total)
+
 [----------] Global test environment tear-down
-[==========] 3 tests from 3 test suites ran. (0 ms total)
-[  PASSED  ] 3 tests.
+[==========] 5 tests from 5 test suites ran. (0 ms total)
+[  PASSED  ] 5 tests.
 <end of output>
-Test time =   0.08 sec
+Test time =   0.06 sec
 ----------------------------------------------------------
 Test Passed.
-"Test_CMake" end time: May 20 21:54 FLE Daylight Time
+"Test_CMake" end time: May 22 16:45 FLE Daylight Time
 "Test_CMake" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 20 21:54 FLE Daylight Time
+End testing: May 22 16:45 FLE Daylight Time

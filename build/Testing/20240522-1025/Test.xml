@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="(empty)"
-	BuildStamp="20240521-0907-Experimental"
+	BuildStamp="20240522-1025-Experimental"
 	Name="(empty)"
 	Generator="ctest-3.29.2"
 	CompilerName=""
@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="3693"
 	>
 	<Testing>
-		<StartDateTime>May 21 18:00 FLE Daylight Time</StartDateTime>
-		<StartTestTime>1716303609</StartTestTime>
+		<StartDateTime>May 22 16:45 FLE Daylight Time</StartDateTime>
+		<StartTestTime>1716385520</StartTestTime>
 		<TestList>
 			<Test>./Unit_Tests/Test_CMake</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys3\build\Unit_Tests\Test_CMake.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0498136</Value>
+					<Value>0.0622706</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -51,12 +51,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJydk89vgjAUx+/8Fe+oBxsFs8OSXcYWl/0yMbKLEAKlQjNoCa91c3/9gG46Fw3iu7SQz7evnzRvoYXgIoUi4mIwhHUlC3CvfQ9ZhT6m/H3r30mqCyYU+jOuHnTsz28fQ+8r0VJt0fFTKdOcKYbq7xYr6qfNLmxOJpRaq5tdBbD4aXsFDYOmr/kA1LxeibUa7SqAWS7jKDcAExteSdHcCZCpkS7/wRPDtYd6gqtw2TQJ3xh95nE4sVaw8F6hreAYQO7zMKK0/VvDpuZP3TAMxlDgsNdtTAaUVFE+tPpE7S4Rm7hReZbFnrxAwb5cwelScMiLTM5S2JMXKDi9FNrsb3R6ROEQIK4sXSlOWZyGzxM5zPd8C0Lq2VlmHKGMKgVyDSpjBpNalVrBR4RQsUJuWALIBWXA6xH8pIwlaOCsYpjJPGnSk7E9hXjbDHBgfQMGPmJ3====</Value>
+					<Value encoding="base64" compression="gzip">eJydk89vgjAUx+/8Fe+oBxsFd1myy9jisl8mRnYRQqBUaAYt4bVu7q8f0E3nokF8lxby+fb1k+YttBBcpFBEXAyGsK5kAe617yGr0MeUv2/9O0l1wYRCf8bVg479+e1j6H0lWqotOn4qZZozxVD93WJF/bTZhc3JhFJrdbOrABY/ba+gYdD0NR+AmtcrsVajXQUwy2Uc5QZgYsMrKZo7ATI10uU/eGK49lBPcBUumybhG6PPPA4n1goW3iu0FRwDyH0eRpS2f2vY1PypG4bBGAoc9rqNyYCSKsqHVp+o3SViEzcqz7LYkxco2JcrOF0KDnmRyVkKe/ICBaeXQpv9jU6PKBwCxJWlK8Upi9PweSKH+Z5vQUg9O8uMI5RRpUCuQWXMYFKrUiv4iBAqVsgNSwC5oAx4PYKflLEEDZxVDDOZJ016MranEG+bAQ6sb/6AYnU=</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>May 21 18:00 FLE Daylight Time</EndDateTime>
-		<EndTestTime>1716303609</EndTestTime>
+		<EndDateTime>May 22 16:45 FLE Daylight Time</EndDateTime>
+		<EndTestTime>1716385520</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

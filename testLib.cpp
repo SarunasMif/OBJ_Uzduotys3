@@ -2,24 +2,41 @@
 #include <iostream>
 #include <span>
 
+using namespace std;
+
 int main() {
     Vector_Lib<int> vec;
-    std::cout << "Max size of int vector: " << vec.max_size() << std::endl;
-
-    Vector_Lib<double> vecDouble;
-    std::cout << "Max size of double vector: " << vecDouble.max_size() << std::endl;
-
-
-    Vector_Lib<int> vec;
-    vec.push_back(1);
-    vec.push_back(2);
-    vec.push_back(3);
-
-    for (int value : vec) {
-        cout << value << " ";
+    
+    for (int i = 0; i < 3; i++) {
+        vec.push_back(i + 1);
     }
+    
 
-    int* arr = vec.data();
+    vec.print();
+
+    vec.insert(1, 9);
+
+    vec.print();
+
+    vec.insert(1, 9);
+
+    vec.print();
+
+    // vec.insert(1, 2, 6);
+
+    // vec.print();
+
+    // vec.insert(1, 3, 8);
+
+    // vec.print();
+
+    // vec.insert(1, 4, 7);
+
+    // vec.print();
+
+    vec.push_back(12);
+
+    vec.print();
 
     system("pause");
 

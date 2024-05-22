@@ -96,6 +96,58 @@ TEST(Unit_Tests_VecLib_3, Mod_Test) {
     t2.erase(1, 3);
 
     EXPECT_EQ(t2[0], 1);
+
+    Vector_Lib<int> t3;
+
+    t3.insert(0, 3);
+
+    EXPECT_EQ(t3[0], 3);
+
+    t3.insert(1, 2, 3);
+
+    EXPECT_EQ(t3[0], 3) << "test 1" << endl;
+    EXPECT_EQ(t3[1], 3) << "test 2" << endl;
+    EXPECT_EQ(t3[2], 3) << "test 3" << endl;
+
+    // Vector_Lib<int> in;
+
+    // for (int i = 0; i < 3; i++) {
+    //     in.push_back(i + 1);
+    // }
+
+    // t3.insert(0, in.begin(), in.end());
+
+    // EXPECT_EQ(t3[0], 1);
+    // EXPECT_EQ(t3[1], 2);
+
+    Vector_Lib<int> t4;
+
+    for (int i = 0; i < 3; i++) {
+        t4.push_back(i + 1);
+    }
+
+    t4.resize(5);
+
+    EXPECT_EQ(t4.capacity(), 5);
+    EXPECT_EQ(t4.size(), 5);
+    EXPECT_EQ(t4[3], 0);
+    EXPECT_EQ(t4[4], 0);
+
+    t4.resize(2);
+
+    EXPECT_EQ(t4.capacity(), 2);
+    EXPECT_EQ(t4.size(), 2);
+    EXPECT_EQ(t4[0], 1);
+    EXPECT_EQ(t4[1], 2);
+
+    t4.resize(6, 4);
+
+    EXPECT_EQ(t4.capacity(), 6);
+    EXPECT_EQ(t4.size(), 6);
+    EXPECT_EQ(t4[2], 4);
+    EXPECT_EQ(t4[3], 4);
+    EXPECT_EQ(t4[4], 4);
+    EXPECT_EQ(t4[5], 4);
 }
 
 TEST(Unit__Test_VecLib_4, CopCon_Test) {
@@ -134,17 +186,17 @@ TEST(Unit_Test_VecLib5, MovCon_Test) {
 
 }
 
-TEST(Unite_Test_VecLib6, Iter_Test) {
-    Vector_Lib<int> t1;
+// TEST(Unite_Test_VecLib6, Iter_Test) {
+//     Vector_Lib<int> t1;
 
-    for (int i = 0; i < 5; i++) {
-        t1.push_back(i + 1);
-    }
+//     for (int i = 0; i < 5; i++) {
+//         t1.push_back(i + 1);
+//     }
 
-    int y = 1;
-    for (int value : t1) {
-        EXPECT_EQ(value, y);
-        y++;
-    }
+//     int y = 1;
+//     for (int value : t1) {
+//         EXPECT_EQ(value, y);
+//         y++;
+//     }
     
-}
+// }

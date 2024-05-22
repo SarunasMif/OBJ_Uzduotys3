@@ -3,7 +3,8 @@
 
 #include "includes.h"
 #include <limits>
-#include <algorithm>
+//#include <iterator>
+
 
 using namespace std;
 
@@ -27,12 +28,20 @@ public:
     // V_Lib Le_arr() const { return arr;}
     // Getters
 
-    // Modifiers functions ---------------------------------------------------- 4/11
+    // Modifiers functions ---------------------------------------------------- 5.3/11
     void push_back(V_Lib data);
     void pop_back();
     void clear();
     void erase(size_t pos);
     void erase(size_t start, size_t end);
+    void insert(size_t pos, const V_Lib& stuff);
+    void insert(size_t pos, int number, const V_Lib& stuff); // Fix bricks everything
+
+    // template <typename InputIt>
+    // void insert(const size_t pos, InputIt first, InputIt last); // Fix just doesn't work
+
+    void resize(int size);
+    void resize(int size, int filler);
     // Capacity functions ----------------------------------------------------- 6/6
     int size();
     int capacity();
@@ -47,45 +56,7 @@ public:
     V_Lib& operator[](int index);
     V_Lib* data() const;
     // Iterators -------------------------------------------------------------- 4/4
-    class Iterator {
-        private:
-            V_Lib* ptr;
-        public:
-            Iterator(V_Lib* p) : ptr(p) {} // Constructor
-
-            V_Lib& operator*() const {
-                return *ptr;
-            }
-
-            Iterator& operator++() {
-                ++ptr;
-                return *this;
-            }
-
-            bool operator==(const Iterator& other) const {
-                return ptr == other.ptr;
-            }
-
-            bool operator!=(const Iterator& other) const {
-                return ptr != other.ptr;
-            }
-    };
-
-    Iterator begin() const {
-        return Iterator(arr);
-    }
-
-    Iterator end() const {
-        return Iterator(arr + current);
-    }
-
-    Iterator rbegin() const {
-        return Iterator(arr + current - 1);
-    }
-
-    Iterator rend() const {
-        return Iterator(arr - 1);
-    }
+    // Net nezinau ar jie aplamai kazkada veike todel ju nebeliko
 
     void print()
     {
