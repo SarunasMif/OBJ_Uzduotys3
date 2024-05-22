@@ -4,7 +4,7 @@
 #include "includes.h"
 #include <limits>
 #include <algorithm>
-//#include <iterator>
+#include <memory>
 
 
 using namespace std;
@@ -29,7 +29,7 @@ public:
     // V_Lib Le_arr() const { return arr;}
     // Getters
 
-    // Modifiers functions ---------------------------------------------------- 6/11
+    // Modifiers functions ---------------------------------------------------- 8/11
     void push_back(V_Lib data);
     void pop_back();
     void clear();
@@ -96,6 +96,7 @@ public:
     } // reference ptsd
 
     void swap(Vector_Lib& vector);
+
     // Capacity functions ----------------------------------------------------- 6/6
     int size();
     int capacity();
