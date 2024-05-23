@@ -1,8 +1,9 @@
 #include "includes.h"
 #include "Studentas.h"
 #include "headers_vector.h"
+#include "Vector_Lib.h"
 
-void splitstudents(vector<Student_Data>& S_Data, string mode){
+void splitstudents(Vector_Lib<Student_Data>& S_Data, string mode){
     string split_type;
     
     do {
@@ -17,8 +18,8 @@ void splitstudents(vector<Student_Data>& S_Data, string mode){
     if (split_type == "1"){
         auto start = high_resolution_clock::now();
 
-        vector<Student_Data> kietiakiai;
-        vector<Student_Data> nuskriaustukai;
+        Vector_Lib<Student_Data> kietiakiai;
+        Vector_Lib<Student_Data> nuskriaustukai;
 
         for (const auto& adata : S_Data){
             if (avg_grade(adata) < 5){
@@ -38,7 +39,7 @@ void splitstudents(vector<Student_Data>& S_Data, string mode){
     else if (split_type == "2"){
         auto start = high_resolution_clock::now();
 
-        vector<Student_Data> vargsiukai;
+        Vector_Lib<Student_Data> vargsiukai;
 
         size_t i = 0;
 
@@ -63,7 +64,7 @@ void splitstudents(vector<Student_Data>& S_Data, string mode){
     }else {
         auto start = high_resolution_clock::now();
 
-        vector<Student_Data> vargsiukai;
+        Vector_Lib<Student_Data> vargsiukai;
 
         auto split = partition(S_Data.begin(), S_Data.end(), [](const Student_Data& S_Data){
             return avg_grade(S_Data) < 5;
@@ -126,8 +127,8 @@ bool isString(const string& str_placeholder){
     return true;
 }// Tikrina ar string yra sudarytas tiks is raidziu
 
-void printData(const vector<Student_Data>& Sdata, string mode, string filename){
-    vector<Student_Data> sorted = Sdata;
+void printData(const Vector_Lib<Student_Data>& Sdata, string mode, string filename){
+    Vector_Lib<Student_Data> sorted = Sdata;
     string setting;
     
     do {
@@ -206,14 +207,14 @@ void printData(const vector<Student_Data>& Sdata, string mode, string filename){
         }
     }
 
-    system("pause");
+    //system("pause");
     auto stop = high_resolution_clock::now();
     chrono::duration<double> diff = stop - start;
     cout << "Isvedimas baigtas! Isvedimas uztruko " << diff.count() << " sekundes." << endl;
 }
 
 int manualInput(){
-    vector<Student_Data> Sdata;
+    Vector_Lib<Student_Data> Sdata;
 
     string str_placeholder;
 
@@ -232,7 +233,7 @@ int manualInput(){
         cin >> str_placeholder;
 
         Number_Of_Students = stoi(str_placeholder);
-        vector<Student_Data> Sdata(Number_Of_Students);
+        Vector_Lib<Student_Data> Sdata(Number_Of_Students);
 
         for (int i = 0; i < Number_Of_Students; i++){
             Input(Sdata[i], gen_s);
@@ -287,7 +288,7 @@ void Input(Student_Data& Sdata, string gen_s){
         uniform_int_distribution<int> dis(1, 10);
 
         Number_Of_Homework = dis(gen);
-        vector<double> HomeWork;
+        Vector_Lib<double> HomeWork;
 
         for (int i = 0; i < Number_Of_Homework; i++){
             HomeWork.push_back(dis(gen));
@@ -307,7 +308,7 @@ void Input(Student_Data& Sdata, string gen_s){
         }while (!isDigit(str_placeholder, 0));
 
         Number_Of_Homework = stoi(str_placeholder);
-        vector<double> HomeWork;
+        Vector_Lib<double> HomeWork;
 
         for (int j = 0; j < Number_Of_Homework; j++){
            
@@ -340,7 +341,7 @@ void Input(Student_Data& Sdata, string gen_s){
 
 
 int fileInput(string filename){
-    vector<Student_Data> Sdata;
+    Vector_Lib<Student_Data> Sdata;
     string str_placeholder;
 
     ifstream Read;

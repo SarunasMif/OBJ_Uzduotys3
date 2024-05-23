@@ -8,23 +8,23 @@
 class Student_Data : public Person {
 private:
     double exam;
-    vector<double> HW;
+    Vector_Lib<double> HW;
 public:
     Student_Data() : Person(), exam(0) { }
-    Student_Data(const string& name, const string& surname, double grade, const vector<double>& HW_) : Person(student_name, student_surname), exam(grade), HW(HW_) {}
+    Student_Data(const string& name, const string& surname, double grade, const Vector_Lib<double>& HW_) : Person(student_name, student_surname), exam(grade), HW(HW_) {}
     Student_Data(istream& is);
     //Constructors
 
     string vardas() const { return student_name;}
     string pavarde() const { return student_surname;}
     double egzaminas() const { return exam;}
-    vector<double> ND() const { return HW;}
+    Vector_Lib<double> ND() const { return HW;}
     //Getters
 
     void SetName(string name){ student_name = name; }
     void SetSurname(string surname){ student_surname = surname; }
     void SetExam( double grade){ exam = grade; }
-    void SetHW (const vector<double>& HW_) { HW = HW_; }
+    void SetHW (const Vector_Lib<double>& HW_) { HW = HW_; }
     //Setters
 
     istream& readStudent(istream&);

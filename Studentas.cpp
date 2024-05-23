@@ -16,7 +16,7 @@ istream& Student_Data::readStudent(istream& is){
   return is;
 }//Studentu informacijos isvedimas i class
 
-double Average(const vector<double>& HW){
+double Average(const Vector_Lib<double>& HW){
   double average = 0;
 
   for (double hw : HW){
@@ -32,10 +32,10 @@ double avg_grade(const Student_Data& Sdata){
   return 0.4 * average + 0.6 * Sdata.egzaminas();
 }//Vidurkio skaiciavimas
 
-double Median(const vector<double>& HW){
+double Median(const Vector_Lib<double>& HW){
   double median;
 
-  vector<double> sorted = HW;
+  Vector_Lib<double> sorted = HW;
   sort(sorted.begin(), sorted.end());
 
   if (sorted.size() % 2 == 0){

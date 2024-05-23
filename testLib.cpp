@@ -1,35 +1,27 @@
 #include "Vector_Lib.h"
-#include <iostream>
-#include <span>
-
-using namespace std;
+#include "Studentas.h"
 
 int main() {
     Vector_Lib<int> vec;
-    Vector_Lib<int> vec2;
     
-    for (int i = 0; i < 3; i++) {
-        vec.push_back(i + 1);
-    }
-    
-    for (int i = 0; i < 3; i++) {
-        vec2.push_back(i + 3);
+    for (int i = 0; i < 15; i++) {
+        vec.push_back(i);
     }
 
-    cout << "v1: ";
+    std::cout << "Original vector: ";
     vec.print();
-    cout << "v2: ";
-    vec2.print();
+    std::cout << endl;
 
-    vec.swap(vec2);
-
-    cout << "v1: ";
+    vec.erase(2);
+    std::cout << "Vector after erasing the 3rd member: ";
     vec.print();
-    cout << "v2: ";
-    vec2.print();
+    std::cout << endl;
+
+    vec.erase(vec.begin() + 4, vec.end() - 1);
+    std::cout << "Vector after erasing all members accept the first four and the last: ";
+    vec.print();
+    std::cout << endl;
 
 
     system("pause");
-
-    return 0;
 }

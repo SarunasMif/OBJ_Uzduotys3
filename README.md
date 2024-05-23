@@ -1,142 +1,279 @@
-# Obj_Uzduotys2
+# Obj_Uzduotys3
 
-# Realizacijos sparta be optimizavimo
+# Spartos analizė 1
 
-100.000 studentu failo:
-Class: 0.061102 sekundes
-Struct: 0.0316057 sekundes
+| Test 1 |
+| Elementu skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 10000 | 0.0001812 s | 0.000102 s |
+| 100000 | 0.0014087 s | 0.000753 s |
+| 1000000 | 0.0082862 s | 0.0060813 s|
+| 10000000 | 0.0751286 s| 0.0632606 s|
+| 100000000 | 0.714488 s| 0.0545918 s|
 
-1.000.000 studentu failo:
-Class: 0.795095 sekundes
-Struct: 0.319547 sekundes
+| Test 2 |
+| Elementu skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 10000 | 0.0001056 s | 0.0001116 s |
+| 100000 | 0.0009402 s| 0.0006627 s|
+| 1000000 | 0.0074966 s | 0.0054467 s |
+| 10000000 | 0.0734579 s| 0.0617664 s|
+| 100000000 | 0.70871 s | 0.541075 s|
 
-## Realizacijos sparta su optimizavimo lygiais 
-### 100.000 studentų
-| Optimization | Struct | Class | File size Struct | File size Class |
-| :---: | :---: | :---: | :---: | :---: |
-| O1 | 0.0127796 sekundes. | 0.027290 sekundes. | 260 KB | 254 KB |
-| O2 | 0.0124957 sekundes. | 0.027528 sekundes. | 270 KB | 260 KB |
-| O3 | 0.0118180 sekundes. | 0.028570 sekundes. | 255 KB | 256 KB |
+| Test3 |
+| Elementu skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 10000 | 0.0001346 s | 0.000109 s|
+| 100000 | 0.000992 s| 0.0007352 s|
+| 1000000 | 0.0074966 s| 0.0054467 s|
+| 10000000 | 0.0738471 s | 0.0616216 s|
+| 100000000 | 0.699923 s | 0.543998 s|
+
+# Spartos analizė 2
+### Failo nuskaitymas
+| Test 1|
+| Studentų skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 100.000 | 0.005047 s | 0.004853 s |
+| 1.000.000 | 0.041024 s | 0.047944 s |
+| 10.000.000 | 0.393229 s | 0.440238 s |
+
+| Test 2|
+| Studentų skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 100.000 | 0.005278 s | 0.004612 s |
+| 1.000.000 | 0.041093 s | 0.051630 s |
+| 10.000.000 | 0.390727 s | 0.409186 s |
 
 
-### 1.000.000 studentų
-| Optimization | Struct | Class | File size Struct | File size Class |
-| :---: | :---: | :---: | :---: | :---: | 
-| O1 | 0.129661 sekundes. | 0.447003 sekundes. |260 KB| 254 KB |
-| O2 | 0.118778 sekundes. | 0.455142 sekundes. |270 KB| 260 KB | 
-| O3 | 0.117472 sekundes. | 0.442860 sekundes. |255 KB| 256 KB |
+| Test 3|
+| Studentų skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 100.000 | 0.006231 s | 0.006952 s |
+| 1.000.000 | 0.045362 s | 0.044390 s |
+| 10.000.000 | 0.388422 s | 0.435645 s |
 
-# Class
-## Class Structure
+### Studentų rūšiavimas į dvi grupes
 
-`Person` bazine abstrakcia klase sudaro sie nariai:
-- `student_name`: string tipo kintamasis, kuri sudaro studento vardas.
-- `student_surname`: string tipo kintamasis, kuri sudaro studento pavarde.
+| Test 1|
+| Studentų skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 100.000 | 0.042480 s | 0.055253 s |
+| 1.000.000 | 0.400612 s | 0.556447 s |
+| 10.000.000 | 4.133181 s | 5.320045 s |
 
-`Student_Data` derived klase sudaro sie nariai:
+| Test 2|
+| Studentų skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 100.000 | 0.040898 s | 0.056640 s|
+| 1.000.000 | 0.401288 s | 0.555743 s |
+| 10.000.000 | 4.057258 s | 5.279137 s|
 
-- `exam`: Duoble tipo kintamasis, kuri sudaro egzamino pazimys.
-- `HW`: Duoble vektorius, kuri sudaro namu darbu pazymiai.
 
-# Duomenu ivedimas
+| Test 3|
+| Studentų skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 100.000 | 0.041255 s | 0.055249 s |
+| 1.000.000 | 0.400448 s | 0.557170 s |
+| 10.000.000 | 4.072259 s | 5.268330 s |
 
-`SetName();`
-`SetSurname();`
-`SetExam():`
-`SetHW(); `
+### Studentų išvedimas į failą
 
-Manual ivedimas:
+| Test 1|
+| Studentų skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 100.000 | 0.824902 s | 0.684435 s |
+| 1.000.000 | 9.990556 s | 7.903053 s|
+| 10.000.000 | 111.325708 s | 89.824931 s |
 
-    Student_Data Sdata;
-    Sdata.SetName("Vardas");
-    Sdata.SetSurname("Pavarde");
-    Sdata.SetExam(8);
-    Sdata.SetHW({4, 5, 6, 7});
+| Test 2|
+| Studentų skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 100.000 | 0.812058 s | 0.705150 s|
+| 1.000.000 | 10.026291 s | 8.043667 s |
+| 10.000.000 | 111.077281 s | 90.445027 s |
 
-Automatinis ivedimas:
 
-    //main_vector.cpp
-    Student_Data Sdata;
-    string str_placeholder;
+| Test 3|
+| Studentų skaičius | std::vector | Vector_Lib |
+| :---: | :---: | :---: |
+| 100.000 | 0.827169 s | 0.682701 s |
+| 1.000.000 | 10.082943 s | 7.949102 s |
+| 10.000.000 | 110.856787 s | 92.131147 s |
 
-    cin >> Sdata; //Nuveda i Studentas.cpp
+# System specs
+Test were run on a system with these specs: `ryzen 5 5600x`, `32gb ddr4 3600mhz`, `rtx 3060 ti`, `250gb Kingston ssd`.
 
-    vector<double> HomeWork;
-    int Number_Of_Homework = 10;
-    for (int i = 0; i < Number_Of_Homework; i++) {
-        cout << "Iveskite namudarbo pazymi: ";
-        cin >> str_placeholder;
-        HomeWork.push_back(stoi(str_placeholder));
-    }
+# Vector_Lib functions
+Examples for functions `push_back()`, `at()`, `operator[]`, `erase()`, `size()` used in Vector_Lib.
 
-    Sdata.SetHW();
-    cout << "Iveskite egzamino pazymi: ";
-    cin >> str_placeholder;
-    Sdata.SetExam(stoi(str_placeholder));
+## 1. `push_back()`
 
-    //Studentas.cpp
-    string s_name, s_surname;
+```cpp
+#include "Vector_Lib.h"
+#include "Studentas.h"
 
-    cout << "Iveskite studento varda ir pavarde: ";
-    set >> s_name;
-    set >> s_surname;
-
-    Sdata.SetName(s_name);
-    Sdata.SetSurname(s_surname);
-
-File ivedimas:
-
-    //main_vector.cpp
-    vector<Student_Data> Sdata;
-    string filename = "kursiokai.txt"
-    string str_placeholder;
-
-    ifstream Read;
-
-    Read.open(filename);
-
-    getline(Read, str_placeholder);
-
-    auto start = high_resolution_clock::now();
-
-    while(getline(Read, str_placeholder)){
-        Student_Data Adata;
-
-        istringstream get(str_placeholder);
-        Adata.readStudent(get); //nuveda i Studentas.cpp
-        Sdata.push_back(Adata);
-
-    }
+int main() {
+    Vector_Lib<int> vec;
     
-    Read.close();
+    vec.push_back(1);
+    vec.push_back(2);
+    vec.push_back(3);
 
-    //Studentas.cpp
-    is >> student_name >> student_surname;
+    vec.print();
 
-    HW.clear();
 
-    double mark;
-    while(is >> mark) {
-      HW.push_back(mark);
+    system("pause");
+}
+```
+```
+Output:
+1 2 3
+```
+
+## 2. `at()`
+
+```cpp
+#include "Vector_Lib.h"
+#include "Studentas.h"
+
+int main() {
+    Vector_Lib<int> vec;
+    
+    vec.push_back(1);
+    vec.push_back(2);
+    vec.push_back(3);
+
+    std::cout << vec.at(1) << endl;
+
+
+    system("pause");
+}
+```
+```
+Output:
+2
+```
+
+```cpp
+#include "Vector_Lib.h"
+#include "Studentas.h"
+
+int main() {
+    Vector_Lib<int> vec;
+    
+    vec.push_back(1);
+    vec.push_back(2);
+    vec.push_back(3);
+
+    std::cout << "Original vector: " << endl;
+    vec.print();
+
+    vec.at(1) = 8;
+
+    std::cout << "Vector after at(1) = 8; : " << endl;
+    vec.print();
+
+    system("pause");
+}
+```
+
+```
+Output:
+Original vector:
+1 2 3
+Vector after at(1) = 8; :
+1 8 3
+```
+
+## 3. `operator[]`
+
+```cpp
+#include "Vector_Lib.h"
+#include "Studentas.h"
+
+int main() {
+    Vector_Lib<int> vec;
+    
+    vec.push_back(1);
+    vec.push_back(2);
+    vec.push_back(3);
+
+    std::cout << "Original vector: ";
+    vec.print();
+    std::cout << endl;
+
+    std::cout << "Vector value at 3rd position : " << vec[2] << endl;
+
+
+    system("pause");
+}
+```
+```
+Output:
+Original vector: 1 2 3
+```
+
+## 4. `erase()`
+
+```cpp
+#include "Vector_Lib.h"
+#include "Studentas.h"
+
+int main() {
+    Vector_Lib<int> vec;
+    
+    for (int i = 0; i < 15; i++) {
+        vec.push_back(i);
     }
 
-    exam = HW.back();
-    HW.pop_back();
+    std::cout << "Original vector: ";
+    vec.print();
+    std::cout << endl;
 
-# Duomenu isvedimas
+    vec.erase(2);
+    std::cout << "Vector after erasing the 3rd member: ";
+    vec.print();
+    std::cout << endl;
 
-`vardas();`
-`pavarde();`
-`egzaminas();`
-`ND();`
-
-    Student_Data Sdata;
-    cout << "Name: " << Sdata.vardas() << endl;
-    cout << "Surname: " << Sdata.pavarde() << endl;
-    cout << "Exam grade: " << Sdata.egzaminas() << endl;
-    cout << "HW: ";
-    for (double mark : Sdata.ND()) {
-        cout << mark << " ";
-    }
+    vec.erase(vec.begin() + 4, vec.end() - 1);
+    std::cout << "Vector after erasing all members accept the first four and the last: ";
+    vec.print();
+    std::cout << endl;
 
 
+    system("pause");
+}
+```
+```
+Output:
+Original vector: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+
+Vector after erasing the 3rd member: 0 1 3 4 5 6 7 8 9 10 11 12 13 14
+
+Vector after erasing all members accept the first four and the last: 0 1 3 4 14
+```
+
+## 5. `size`
+
+```cpp
+#include "Vector_Lib.h"
+#include "Studentas.h"
+
+int main() {
+    Vector_Lib<int> vec;
+    
+    vec.push_back(1);
+    vec.push_back(2);
+    vec.push_back(3);
+
+    std::cout << vec.size() << endl;
+
+
+    system("pause");
+}
+```
+```
+Output:
+3
+```
