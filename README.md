@@ -1,5 +1,24 @@
 # Obj_Uzduotys3
 
+# Naudojimosi instrukcija
+
+# Naudojimosi instrukcija
+
+1) Jei neturite susiinstaliuokite c++ compilers sekdami instrukcijas šiame puslapyje https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/ .
+
+2) Jei neturite susiinstaliuokite cmake, kuris bus reikalingas buildint programa. Puslapyje https://cmake.org/download/ parsisiuskite `Windows x64 ZIP` ir extractinkit ji jusu pasirinktoje vietoje. Tada nueikite i cmake folderyje esanti bin folderi ir jo PATH pridekite i `Environment veriables PATH`.
+
+3) Atsidarykite `cmd` ir naudodami cd nunaviguokite i folderi, i kuri parsisiuntete program. Tada i terminal iveskite sias komandas:
+
+- `git clone https://github.com/google/googletest.git -b v1.14.0`
+- `mkdir build`
+- `cd build`
+- `cmake -G "Unix Makefiles" ..`
+- `cmake --build .`
+- `copy Program.exe ..`
+
+4) Programos setup.exe faila rasit programos folderio viduje, o Unit test exe faila rasit nueje i build aplanka ir tada i Unit_Test aplanka.
+
 # Spartos analizė 1
 
 | Test 1 |
