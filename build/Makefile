@@ -294,6 +294,7 @@ Vector_Lib.obj: Vector_Lib.cpp.obj
 # target to build an object file
 Vector_Lib.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main_CMake.dir\build.make CMakeFiles/Main_CMake.dir/Vector_Lib.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Program.dir\build.make CMakeFiles/Program.dir/Vector_Lib.cpp.obj
 .PHONY : Vector_Lib.cpp.obj
 
 Vector_Lib.i: Vector_Lib.cpp.i
@@ -302,6 +303,7 @@ Vector_Lib.i: Vector_Lib.cpp.i
 # target to preprocess a source file
 Vector_Lib.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main_CMake.dir\build.make CMakeFiles/Main_CMake.dir/Vector_Lib.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Program.dir\build.make CMakeFiles/Program.dir/Vector_Lib.cpp.i
 .PHONY : Vector_Lib.cpp.i
 
 Vector_Lib.s: Vector_Lib.cpp.s
@@ -310,6 +312,7 @@ Vector_Lib.s: Vector_Lib.cpp.s
 # target to generate assembly for a file
 Vector_Lib.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main_CMake.dir\build.make CMakeFiles/Main_CMake.dir/Vector_Lib.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Program.dir\build.make CMakeFiles/Program.dir/Vector_Lib.cpp.s
 .PHONY : Vector_Lib.cpp.s
 
 main_vector.obj: main_vector.cpp.obj

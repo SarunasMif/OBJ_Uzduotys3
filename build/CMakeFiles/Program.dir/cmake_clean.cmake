@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Program.dir/Studentas.cpp.obj"
   "CMakeFiles/Program.dir/Studentas.cpp.obj.d"
+  "CMakeFiles/Program.dir/Vector_Lib.cpp.obj"
+  "CMakeFiles/Program.dir/Vector_Lib.cpp.obj.d"
   "CMakeFiles/Program.dir/main_vector.cpp.obj"
   "CMakeFiles/Program.dir/main_vector.cpp.obj.d"
   "Program.exe"

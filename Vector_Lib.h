@@ -46,7 +46,7 @@ public:
     Vector_Lib<V_Lib>& operator=(Vector_Lib&& Adata) noexcept; //Move assignment
 
     // Modifiers functions ---------------------------------------------------- 8/11
-    void push_back(V_Lib data) {
+    void push_back(V_Lib data) {      
         if (current == Capacity) {
             V_Lib* temp = new V_Lib[2 * Capacity];
 
@@ -61,9 +61,14 @@ public:
 
         arr[current] = data;
         current++;
+
     };
     void pop_back() {current--;};
-    void clear();
+    void clear() {
+        delete[] arr;
+        arr = new V_Lib[1];
+        current = 0;
+    };
     void erase(size_t pos); // 1/2
 
     template <typename InputIt>

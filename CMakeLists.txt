@@ -29,4 +29,4 @@ add_library(${This} STATIC ${Source} ${Headers})
 
 add_subdirectory(Unit_Tests)
 
-add_executable(Program main_vector.cpp Studentas.cpp)
+add_executable(Program main_vector.cpp Studentas.cpp Vector_Lib.cpp)

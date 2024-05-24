@@ -37,12 +37,12 @@ int Vector_Lib<V_Lib>::capacity() const {
 //     current--;
 // }
 
-template <typename V_Lib>
-void Vector_Lib<V_Lib>::clear() {
-    delete[] arr;
-    arr = new V_Lib[1];
-    current = 0;
-}
+// template <typename V_Lib>
+// void Vector_Lib<V_Lib>::clear() {
+//     delete[] arr;
+//     arr = new V_Lib[1];
+//     current = 0;
+// }
 
 template <typename V_Lib>
 V_Lib Vector_Lib<V_Lib>::front() const{

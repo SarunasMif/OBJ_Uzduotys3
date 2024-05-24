@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/Studentas.cpp" "CMakeFiles/Program.dir/Studentas.cpp.obj" "gcc" "CMakeFiles/Program.dir/Studentas.cpp.obj.d"
+  "C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/Vector_Lib.cpp" "CMakeFiles/Program.dir/Vector_Lib.cpp.obj" "gcc" "CMakeFiles/Program.dir/Vector_Lib.cpp.obj.d"
   "C:/Users/sgiky/Documents/GitHub/OBJ_Uzduotys3/main_vector.cpp" "CMakeFiles/Program.dir/main_vector.cpp.obj" "gcc" "CMakeFiles/Program.dir/main_vector.cpp.obj.d"
   )
 

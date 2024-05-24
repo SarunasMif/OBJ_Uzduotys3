@@ -212,6 +212,7 @@ int main() {
 ```
 Output:
 Original vector: 1 2 3
+Vector value at 3rd position : 3
 ```
 
 ## 4. `erase()`

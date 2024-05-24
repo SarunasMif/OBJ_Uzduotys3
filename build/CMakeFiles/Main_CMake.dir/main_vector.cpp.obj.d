@@ -127,6 +127,34 @@ CMakeFiles/Main_CMake.dir/main_vector.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/istream \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/istream.tcc \
+ C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys3\Vector_Lib.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/limits \
+ C:/msys64/ucrt64/include/c++/13.2.0/algorithm \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_algo.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/algorithmfwd.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_heap.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/uniform_int_dist.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_tempbuf.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/memory \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_uninitialized.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_raw_storage_iter.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/align.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/uses_allocator.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/unique_ptr.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/tuple \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/shared_ptr.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/shared_ptr_base.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/allocated_ptr.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/ext/aligned_buffer.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/ext/concurrence.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/shared_ptr_atomic.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/atomic_base.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/atomic_lockfree_defines.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/backward/auto_ptr.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/iterator \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stream_iterator.h \
  C:/msys64/ucrt64/include/c++/13.2.0/iomanip \
  C:/msys64/ucrt64/include/c++/13.2.0/locale \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/locale_facets_nonio.h \
@@ -139,22 +167,12 @@ CMakeFiles/Main_CMake.dir/main_vector.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/quoted_string.h \
  C:/msys64/ucrt64/include/c++/13.2.0/sstream \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/sstream.tcc \
- C:/msys64/ucrt64/include/c++/13.2.0/algorithm \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_algo.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/algorithmfwd.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_heap.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/uniform_int_dist.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_tempbuf.h \
  C:/msys64/ucrt64/include/c++/13.2.0/random \
  C:/msys64/ucrt64/include/c++/13.2.0/cmath \
  C:/msys64/ucrt64/include/math.h \
- C:/msys64/ucrt64/include/c++/13.2.0/limits \
  C:/msys64/ucrt64/include/c++/13.2.0/cstdint \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
- C:/msys64/ucrt64/include/stdint.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/random.h \
  C:/msys64/ucrt64/include/c++/13.2.0/vector \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_uninitialized.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/vector.tcc \
@@ -177,8 +195,6 @@ CMakeFiles/Main_CMake.dir/main_vector.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/fstream.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/list \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_list.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/allocated_ptr.h \
- C:/msys64/ucrt64/include/c++/13.2.0/ext/aligned_buffer.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/list.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/deque \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_deque.h \
@@ -202,22 +218,7 @@ CMakeFiles/Main_CMake.dir/main_vector.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/cstddef \
  C:/msys64/ucrt64/include/c++/13.2.0/bitset \
  C:/msys64/ucrt64/include/c++/13.2.0/functional \
- C:/msys64/ucrt64/include/c++/13.2.0/tuple \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/uses_allocator.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/std_function.h \
- C:/msys64/ucrt64/include/c++/13.2.0/iterator \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/stream_iterator.h \
- C:/msys64/ucrt64/include/c++/13.2.0/memory \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_raw_storage_iter.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/align.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/unique_ptr.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/shared_ptr.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/shared_ptr_base.h \
- C:/msys64/ucrt64/include/c++/13.2.0/ext/concurrence.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/shared_ptr_atomic.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/atomic_base.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/atomic_lockfree_defines.h \
- C:/msys64/ucrt64/include/c++/13.2.0/backward/auto_ptr.h \
  C:/msys64/ucrt64/include/c++/13.2.0/array \
  C:/msys64/ucrt64/include/c++/13.2.0/compare \
  C:/msys64/ucrt64/include/c++/13.2.0/atomic \
