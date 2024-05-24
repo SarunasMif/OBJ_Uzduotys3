@@ -29,6 +29,9 @@
 | 10000000 | 0.0738471 s | 0.0616216 s|
 | 100000000 | 0.699923 s | 0.543998 s|
 
+# Atminties perskirstymai
+`vectorClass` ir `std::vector` užpildant vektorių 10.000.000 elementų įvyksta **27** atminties perskirstymai. Perskirstymas įvyksta tada, kai yra patenkinama sąlyga: `capacity() == size()`, t.y. kai nelieka vietos `capacity()` naujiems elementams.
+
 # Spartos analizė 2
 ### Failo nuskaitymas
 | Test 1|

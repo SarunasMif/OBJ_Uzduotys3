@@ -468,9 +468,24 @@ int main() {
         generateFile();
     }else if (input_mode == "2"){
         string filename;
-        filename = "kursiokai.txt";
+        string filename2;
+        string input;
+        filename = "Studentai10000.txt";
+        filename2 = "Studentai100000.txt";
+        cout << "Kuri faila norite nuskaityti?" << endl;
+        cout << "[1] Studentai10000.txt (iveskite 1)" << endl;
+        cout << "[2] Studentai100000.txt (iveskite 2)" << endl;
+        
+        do {
+            cout << "Input: ";
+            cin >> input;
+        } while (input != "1" && input != "2");
 
-        fileInput(filename);   
+        if (input == "1") {
+            fileInput(filename); 
+        } else {
+            fileInput(filename2); 
+        }  
     }
 
     system("pause");

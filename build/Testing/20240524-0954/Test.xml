@@ -24,8 +24,8 @@
 	ProcessorClockFrequency="3693"
 	>
 	<Testing>
-		<StartDateTime>May 24 13:21 FLE Daylight Time</StartDateTime>
-		<StartTestTime>1716546099</StartTestTime>
+		<StartDateTime>May 24 14:06 FLE Daylight Time</StartDateTime>
+		<StartTestTime>1716548762</StartTestTime>
 		<TestList>
 			<Test>./Unit_Tests/Test_CMake</Test>
 		</TestList>
@@ -36,7 +36,7 @@
 			<FullCommandLine>C:\Users\sgiky\Documents\GitHub\OBJ_Uzduotys3\build\Unit_Tests\Test_CMake.exe</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0545365</Value>
+					<Value>0.0285829</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -51,12 +51,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJydk89PwjAUgO/7K95RDjSwGQ8mXkSD8RcJYV7YsnRd2Rq3dunrUPzrXakyYyAM3mXt+r3X9yV980ZKIXOoqJAXA1hpVcHkOgqRa4wwF++b6E6xpuLSYDQV5qFJo9ntYxJ+ZY0yGwyiXKm85Iaj+btEzaLcrhJbmTDmLW92EcP859orsAy6e90GsBHtl3jL4S5imJYqpaUDuFwLraTtCZCbYVP/g8eO2xYNpTDJwjbyxtmzSJORt4R5+ArbiPeck0lBdWIrtKSL2dMREi5GUOHglDZcChhlaDnwemTib+r4gEEHkPsyoYxt/x6Q2A/39+jyzxfxj4n4ZELrXhYdeYaCf75CcEwhIC8q66XQkWcoBCcpdC+RkHZ2FoVAqKk2oFZgCu5w1Zi6MfBBETSv1JpngEIyDqIdwU/GeYYOLjTHQpWZzR6P/EtIN3aAY+8bK59isg==</Value>
+					<Value encoding="base64" compression="gzip">eJydk01vgkAQhu/8ijnqQaJie2jSS2li0y8TI70IIXyssCnsEGbX1v76Aqu2NlLFuezX8+7su5OZKyG4SCAPuOj1YVViDvaN6xAryaWEv2/ce4xUzoQkd8rlgwrd2d2j73zFCuWGLDdBTDImGcnfUyojN6lnfn2zGUXG8nYfHsy3aa+hZkjn1QsgxavRNJaDfXgwzTAMMg0wseYlivpNQEwOVPEHHmmuudQRXPqLOon/xqJnHvpjYwlz5xWa8I4Bph0UzVZF6pg9nSChN4Sc+p3eoTUgUQZZ3+gitU5ZsMwXjM+y8ENeYMHqZKHR7qSTIxYOAdPGwkbR5qIdPs/Iob5zLbbKq5ZK7I6r313/Y6INPb8WO/WFBkyz6p1FygmKoJSAK5Ap0zgqWSgJHwFByXJcsxiIi4gBr1rwM2IsJg2nJaMUs7hWj4bjCYSbuoE94xsK52KO====</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>May 24 13:21 FLE Daylight Time</EndDateTime>
-		<EndTestTime>1716546099</EndTestTime>
+		<EndDateTime>May 24 14:06 FLE Daylight Time</EndDateTime>
+		<EndTestTime>1716548762</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

@@ -62,14 +62,14 @@ public:
         arr[current] = data;
         current++;
 
-    };
-    void pop_back() {current--;};
+    }; /// Adds a new value to the back of the array
+    void pop_back() {current--;}; ///Removes the last element
     void clear() {
         delete[] arr;
         arr = new V_Lib[1];
         current = 0;
-    };
-    void erase(size_t pos); // 1/2
+    }; /// Deletes all array members
+    void erase(size_t pos); // 1/2 /// Erases a member from the array at the specified location
 
     template <typename InputIt>
     void erase(InputIt first, InputIt last) {
@@ -80,10 +80,10 @@ public:
             copy(last_value, arr + current, first_value);
             current -= (last_value - first_value);
         }
-    } // 2/2
+    } // 2/2 ///Erases members from the array specified by the given iterators
 
-    void insert(size_t pos, const V_Lib& stuff); // 1/3
-    void insert(size_t pos, int number, const V_Lib& stuff);  // 2/3
+    void insert(size_t pos, const V_Lib& stuff); // 1/3 /// Inserts an element into the array at the specified location
+    void insert(size_t pos, int number, const V_Lib& stuff);  // 2/3 // Inserts a number of the same element at the specified location
 
     template <class InputIt>
     void insert(const size_t pos, InputIt first, InputIt last) {
@@ -113,10 +113,10 @@ public:
             Capacity = new_cap;
             current = new_cap;
         }
-    }; // Ikisau cia, nes man kroniskai mete "undefined reference" nors ir buvo defined // 3/3
+    }; // Ikisau cia, nes man kroniskai mete "undefined reference" nors ir buvo defined // 3/3 /// Inserts a number of element specified by the given iterators at the given position
 
-    void resize(int size);
-    void resize(int size, int filler);
+    void resize(size_t size); /// Changes the capacity of the array and fills it with value 0
+    void resize(size_t size, size_t filler); /// Changes the capacity of the array and fills it with the given value
 
     template <class InputIt>
     void append_range(InputIt first, InputIt last) {
@@ -140,29 +140,27 @@ public:
         Capacity = new_cap;
         current = new_cap;
 
-    } // reference ptsd
+    } // reference ptsd /// Ads elements specified by the given iterators to the back of the array
 
-    void swap(Vector_Lib& vector);
+    void swap(Vector_Lib& vector); /// Swaps values of the given arrays
 
     // Capacity functions ----------------------------------------------------- 6/6
-    int size() const {
-        return current;
-    };
-    int capacity() const;
-    bool empty() const;
-    void reserve(int size);
-    void shrink_to_fit();
+    int size() const {return current;}; /// Returns the current size of the array
+    int capacity() const; /// Returns the capacity of the array
+    bool empty() const; /// Checks if the array is empty
+    void reserve(int size); /// Reserves space for the array by increasing its capacity
+    void shrink_to_fit(); /// Allocates only as much space for the array as it is needed based on the current number of the elements n the array
     static size_t max_size();
     // Element access --------------------------------------------------------- 5/5
-    V_Lib front() const;
+    V_Lib front() const; /// Returns the current element at the front of the array
     V_Lib back() const {
         if (Capacity == 0) {
             throw out_of_range("Index out of range!");
         }
 
         return arr[current - 1];
-    };
-    V_Lib& at(int index);
+    }; /// Returns the last element in the array
+    V_Lib& at(int index); /// Access the specified element in the array
     const V_Lib& at(int index) const;
     V_Lib& operator[](int index) {
         if (index < 0 || index >= current) {
@@ -170,8 +168,8 @@ public:
         } else {
             return arr[index];
         }
-    };
-    V_Lib* data() const;
+    }; /// Access the specified element in the array
+    V_Lib* data() const; /// Copys the array 
     // Iterators -------------------------------------------------------------- 4/4
 
     iterator begin() {return arr;}

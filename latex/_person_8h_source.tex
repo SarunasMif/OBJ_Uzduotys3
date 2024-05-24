@@ -1,0 +1,35 @@
+\doxysection{Person.\+h}
+\hypertarget{_person_8h_source}{}\label{_person_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PERSON\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PERSON\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}includes.h"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_person}{Person}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{string}\ student\_name;}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{string}\ student\_surname;}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_person}{Person}}()\ :\ student\_name(\textcolor{stringliteral}{"{}"{}})\ ,\ student\_surname(\textcolor{stringliteral}{"{}"{}})\ \{\}}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_person}{Person}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ surname)\ :\ student\_name(name),\ student\_surname(surname)\ \{\}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//Konstruktoriai}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ SetName(\textcolor{keywordtype}{string}\ name)\{\ student\_name\ =\ name;\ \}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ SetSurname(\textcolor{keywordtype}{string}\ surname)\{\ student\_surname\ =\ surname;\ \}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//Setters}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{string}\ vardas()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ student\_name;\}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{string}\ pavarde()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ student\_surname;\}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//Getters}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ f()\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//Padaro\ bazine\ klase\ Person\ abstrakcija}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_person}{\string~Person}}()\ \{\}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//Deconstructor}}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

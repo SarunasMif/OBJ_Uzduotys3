@@ -1,0 +1,164 @@
+\doxysection{Vector\+\_\+\+Lib\texorpdfstring{$<$}{<} V\+\_\+\+Lib \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_vector___lib}{}\label{class_vector___lib}\index{Vector\_Lib$<$ V\_Lib $>$@{Vector\_Lib$<$ V\_Lib $>$}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vector___lib_a05f01f665d4c6d7136dfc33873554ded}\label{class_vector___lib_a05f01f665d4c6d7136dfc33873554ded} 
+using {\bfseries iterator} = V\+\_\+\+Lib\texorpdfstring{$\ast$}{*}
+\item 
+\Hypertarget{class_vector___lib_a12edfdd47052ab241c285d624f7ef285}\label{class_vector___lib_a12edfdd47052ab241c285d624f7ef285} 
+using {\bfseries const\+\_\+iterator} = const V\+\_\+\+Lib\texorpdfstring{$\ast$}{*}
+\item 
+\Hypertarget{class_vector___lib_ab3a59e0010e492d08b561ec1051c68eb}\label{class_vector___lib_ab3a59e0010e492d08b561ec1051c68eb} 
+typedef V\+\_\+\+Lib {\bfseries value\+\_\+type}
+\item 
+\Hypertarget{class_vector___lib_a439d232dc8b163455a6f13252e43ac56}\label{class_vector___lib_a439d232dc8b163455a6f13252e43ac56} 
+typedef value\+\_\+type \& {\bfseries reference}
+\item 
+\Hypertarget{class_vector___lib_acd266939eb7c3a69a522d6aa5e2f7c91}\label{class_vector___lib_acd266939eb7c3a69a522d6aa5e2f7c91} 
+typedef const value\+\_\+type \& {\bfseries const\+\_\+reference}
+\item 
+\Hypertarget{class_vector___lib_ad8702f622e52135ec2cb0fbb9750f09e}\label{class_vector___lib_ad8702f622e52135ec2cb0fbb9750f09e} 
+typedef value\+\_\+type \texorpdfstring{$\ast$}{*} {\bfseries pointer}
+\item 
+\Hypertarget{class_vector___lib_a037aff5c978dbe9589a5777bfac18056}\label{class_vector___lib_a037aff5c978dbe9589a5777bfac18056} 
+typedef const value\+\_\+type \texorpdfstring{$\ast$}{*} {\bfseries const\+\_\+pointer}
+\item 
+\Hypertarget{class_vector___lib_ae8713616b150dc9f619c9dd579478843}\label{class_vector___lib_ae8713616b150dc9f619c9dd579478843} 
+typedef std\+::reverse\+\_\+iterator$<$ iterator $>$ {\bfseries reverse\+\_\+iterator}
+\item 
+\Hypertarget{class_vector___lib_a9224e01dbbfbb3366b8aa2a96c1212d3}\label{class_vector___lib_a9224e01dbbfbb3366b8aa2a96c1212d3} 
+typedef std\+::reverse\+\_\+iterator$<$ const\+\_\+iterator $>$ {\bfseries const\+\_\+reverse\+\_\+iterator}
+\item 
+\Hypertarget{class_vector___lib_a54611494f76412fdce1960d7897dd5d8}\label{class_vector___lib_a54611494f76412fdce1960d7897dd5d8} 
+typedef ptrdiff\+\_\+t {\bfseries difference\+\_\+type}
+\item 
+\Hypertarget{class_vector___lib_a53e4d9e325998407baf2d09baa30a96a}\label{class_vector___lib_a53e4d9e325998407baf2d09baa30a96a} 
+typedef size\+\_\+t {\bfseries size\+\_\+type}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vector___lib_a90ba958d70cd8482e61ceb8c8a5eeb9d}\label{class_vector___lib_a90ba958d70cd8482e61ceb8c8a5eeb9d} 
+{\bfseries Vector\+\_\+\+Lib} (int \mbox{\hyperlink{class_vector___lib_a043989b34d7582c90f86fd968a67dcaf}{capacity}})
+\item 
+\Hypertarget{class_vector___lib_a49bf0cd7ec2e977625734ad4e7f158f9}\label{class_vector___lib_a49bf0cd7ec2e977625734ad4e7f158f9} 
+{\bfseries Vector\+\_\+\+Lib} (const \mbox{\hyperlink{class_vector___lib}{Vector\+\_\+\+Lib}} \&Adata)
+\item 
+\Hypertarget{class_vector___lib_ab282d91295c6ac935bfadf072a4c29de}\label{class_vector___lib_ab282d91295c6ac935bfadf072a4c29de} 
+\mbox{\hyperlink{class_vector___lib}{Vector\+\_\+\+Lib}}$<$ V\+\_\+\+Lib $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_vector___lib}{Vector\+\_\+\+Lib}} \&Adata)
+\item 
+\Hypertarget{class_vector___lib_a5e02a0ee7df86f571fea4838dd3adf26}\label{class_vector___lib_a5e02a0ee7df86f571fea4838dd3adf26} 
+{\bfseries Vector\+\_\+\+Lib} (\mbox{\hyperlink{class_vector___lib}{Vector\+\_\+\+Lib}} \&\&Adata) noexcept
+\item 
+\Hypertarget{class_vector___lib_a0d30a4feafcf9dc69f5bfb5a8b09107b}\label{class_vector___lib_a0d30a4feafcf9dc69f5bfb5a8b09107b} 
+\mbox{\hyperlink{class_vector___lib}{Vector\+\_\+\+Lib}}$<$ V\+\_\+\+Lib $>$ \& {\bfseries operator=} (\mbox{\hyperlink{class_vector___lib}{Vector\+\_\+\+Lib}} \&\&Adata) noexcept
+\item 
+\Hypertarget{class_vector___lib_afcf585f8381ed53dcd176a2dd7b64c65}\label{class_vector___lib_afcf585f8381ed53dcd176a2dd7b64c65} 
+void {\bfseries push\+\_\+back} (V\+\_\+\+Lib \mbox{\hyperlink{class_vector___lib_ab0ea26b5749fda76258c454edbd62df1}{data}})
+\item 
+\Hypertarget{class_vector___lib_a350c7129c395752b6477f43f293f8630}\label{class_vector___lib_a350c7129c395752b6477f43f293f8630} 
+void {\bfseries pop\+\_\+back} ()
+\begin{DoxyCompactList}\small\item\em Adds a new value to the back of the array. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a9eac69507e1862fd0fccd7ea335d2d82}\label{class_vector___lib_a9eac69507e1862fd0fccd7ea335d2d82} 
+void {\bfseries clear} ()
+\begin{DoxyCompactList}\small\item\em Removes the last element. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a54cc06293e8d027939fdfa0804fec54c}\label{class_vector___lib_a54cc06293e8d027939fdfa0804fec54c} 
+void {\bfseries erase} (size\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Deletes all array members. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_aa516d70978fac5f8d0b9112bae203499}\label{class_vector___lib_aa516d70978fac5f8d0b9112bae203499} 
+{\footnotesize template$<$typename Input\+It $>$ }\\void {\bfseries erase} (Input\+It first, Input\+It last)
+\item 
+\Hypertarget{class_vector___lib_a8821404adb6be0e44c0d47a8d9ab696f}\label{class_vector___lib_a8821404adb6be0e44c0d47a8d9ab696f} 
+void {\bfseries insert} (size\+\_\+t pos, const V\+\_\+\+Lib \&stuff)
+\item 
+\Hypertarget{class_vector___lib_a6e900c82f79478f701516c0597008279}\label{class_vector___lib_a6e900c82f79478f701516c0597008279} 
+void {\bfseries insert} (size\+\_\+t pos, int number, const V\+\_\+\+Lib \&stuff)
+\item 
+\Hypertarget{class_vector___lib_a2bf66e5b6fb1045dac89b5acbb63129d}\label{class_vector___lib_a2bf66e5b6fb1045dac89b5acbb63129d} 
+{\footnotesize template$<$class Input\+It $>$ }\\void {\bfseries insert} (const size\+\_\+t pos, Input\+It first, Input\+It last)
+\item 
+\Hypertarget{class_vector___lib_a09d7c09441c917fec29b25223e9c468c}\label{class_vector___lib_a09d7c09441c917fec29b25223e9c468c} 
+void {\bfseries resize} (size\+\_\+t \mbox{\hyperlink{class_vector___lib_aa5913e474495e85d6780e5bd5347f7d0}{size}})
+\item 
+\Hypertarget{class_vector___lib_aa57b086710320f53d55fd46be7d8b69a}\label{class_vector___lib_aa57b086710320f53d55fd46be7d8b69a} 
+void {\bfseries resize} (size\+\_\+t \mbox{\hyperlink{class_vector___lib_aa5913e474495e85d6780e5bd5347f7d0}{size}}, size\+\_\+t filler)
+\begin{DoxyCompactList}\small\item\em Changes the capacity of the array and fills it with value 0. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a3165df88f3de0442f2573f86b4248168}\label{class_vector___lib_a3165df88f3de0442f2573f86b4248168} 
+{\footnotesize template$<$class Input\+It $>$ }\\void {\bfseries append\+\_\+range} (Input\+It first, Input\+It last)
+\begin{DoxyCompactList}\small\item\em Changes the capacity of the array and fills it with the given value. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a77132a8e1ce0768a8371e8608574b0bd}\label{class_vector___lib_a77132a8e1ce0768a8371e8608574b0bd} 
+void {\bfseries swap} (\mbox{\hyperlink{class_vector___lib}{Vector\+\_\+\+Lib}} \&vector)
+\item 
+\Hypertarget{class_vector___lib_aa5913e474495e85d6780e5bd5347f7d0}\label{class_vector___lib_aa5913e474495e85d6780e5bd5347f7d0} 
+int {\bfseries size} () const
+\begin{DoxyCompactList}\small\item\em Swaps values of the given arrays. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a043989b34d7582c90f86fd968a67dcaf}\label{class_vector___lib_a043989b34d7582c90f86fd968a67dcaf} 
+int {\bfseries capacity} () const
+\begin{DoxyCompactList}\small\item\em Returns the current size of the array. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_ad4f6317493726362bade59a5a39038d1}\label{class_vector___lib_ad4f6317493726362bade59a5a39038d1} 
+bool {\bfseries empty} () const
+\begin{DoxyCompactList}\small\item\em Returns the capacity of the array. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a8b40595b9423ef2e7b9356aa69a8efb5}\label{class_vector___lib_a8b40595b9423ef2e7b9356aa69a8efb5} 
+void {\bfseries reserve} (int \mbox{\hyperlink{class_vector___lib_aa5913e474495e85d6780e5bd5347f7d0}{size}})
+\begin{DoxyCompactList}\small\item\em Checks if the array is empty. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a830b9df032ef9eb8eeb4d2d0eeaf733e}\label{class_vector___lib_a830b9df032ef9eb8eeb4d2d0eeaf733e} 
+void {\bfseries shrink\+\_\+to\+\_\+fit} ()
+\begin{DoxyCompactList}\small\item\em Reserves space for the array by increasing its capacity. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_aa5decca67dff993ce49de5920901c05e}\label{class_vector___lib_aa5decca67dff993ce49de5920901c05e} 
+V\+\_\+\+Lib {\bfseries front} () const
+\item 
+\Hypertarget{class_vector___lib_afd138baa5b675af540c4a449649ffcb5}\label{class_vector___lib_afd138baa5b675af540c4a449649ffcb5} 
+V\+\_\+\+Lib {\bfseries back} () const
+\begin{DoxyCompactList}\small\item\em Returns the current element at the front of the array. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a605f4b867d712513b753e9a92b6cea22}\label{class_vector___lib_a605f4b867d712513b753e9a92b6cea22} 
+V\+\_\+\+Lib \& {\bfseries at} (int index)
+\begin{DoxyCompactList}\small\item\em Returns the last element in the array. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a0f5a5580741de3cb1060c9f816e1c55f}\label{class_vector___lib_a0f5a5580741de3cb1060c9f816e1c55f} 
+const V\+\_\+\+Lib \& {\bfseries at} (int index) const
+\begin{DoxyCompactList}\small\item\em Access the specified element in the array. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a51aa1e4ab4ffd462fe38c9ce7bb29f72}\label{class_vector___lib_a51aa1e4ab4ffd462fe38c9ce7bb29f72} 
+V\+\_\+\+Lib \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+\Hypertarget{class_vector___lib_ab0ea26b5749fda76258c454edbd62df1}\label{class_vector___lib_ab0ea26b5749fda76258c454edbd62df1} 
+V\+\_\+\+Lib \texorpdfstring{$\ast$}{*} {\bfseries data} () const
+\begin{DoxyCompactList}\small\item\em Access the specified element in the array. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a06a455898761c416d4d1521ebc5336ce}\label{class_vector___lib_a06a455898761c416d4d1521ebc5336ce} 
+iterator {\bfseries begin} ()
+\begin{DoxyCompactList}\small\item\em Copys the array. \end{DoxyCompactList}\item 
+\Hypertarget{class_vector___lib_a9234cc1f49e79bc3c39c3846c94fac95}\label{class_vector___lib_a9234cc1f49e79bc3c39c3846c94fac95} 
+const\+\_\+iterator {\bfseries begin} () const
+\item 
+\Hypertarget{class_vector___lib_a0fdb2bab92f18527b4a3cc1e9f0da524}\label{class_vector___lib_a0fdb2bab92f18527b4a3cc1e9f0da524} 
+iterator {\bfseries end} ()
+\item 
+\Hypertarget{class_vector___lib_a4d2a712a57b34a0da73f30b25fd7f682}\label{class_vector___lib_a4d2a712a57b34a0da73f30b25fd7f682} 
+const\+\_\+iterator {\bfseries end} () const
+\item 
+\Hypertarget{class_vector___lib_adef4ea47aa617f8a0218f044c6d72807}\label{class_vector___lib_adef4ea47aa617f8a0218f044c6d72807} 
+iterator {\bfseries rbegin} ()
+\item 
+\Hypertarget{class_vector___lib_ae6eb131be01875cbd707cd9a7610122f}\label{class_vector___lib_ae6eb131be01875cbd707cd9a7610122f} 
+iterator {\bfseries rend} ()
+\item 
+\Hypertarget{class_vector___lib_a8a65ea064f4b7764c8fed9cf41366405}\label{class_vector___lib_a8a65ea064f4b7764c8fed9cf41366405} 
+const\+\_\+iterator {\bfseries cbegin} () const
+\item 
+\Hypertarget{class_vector___lib_accdbf35bcd8c0fa01ceba9ac40af2dd3}\label{class_vector___lib_accdbf35bcd8c0fa01ceba9ac40af2dd3} 
+const\+\_\+iterator {\bfseries cend} () const
+\item 
+\Hypertarget{class_vector___lib_ac7bf5f43941717297af62a7fcc4da5ed}\label{class_vector___lib_ac7bf5f43941717297af62a7fcc4da5ed} 
+void {\bfseries print} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_vector___lib_aba0aeb42ad66ba485a1cbf4e1b75514b}\label{class_vector___lib_aba0aeb42ad66ba485a1cbf4e1b75514b} 
+static size\+\_\+t {\bfseries max\+\_\+size} ()
+\begin{DoxyCompactList}\small\item\em Allocates only as much space for the array as it is needed based on the current number of the elements n the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Vector\+\_\+\+Lib.\+h\item 
+Vector\+\_\+\+Lib.\+cpp\end{DoxyCompactItemize}

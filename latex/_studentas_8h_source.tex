@@ -1,0 +1,55 @@
+\doxysection{Studentas.\+h}
+\hypertarget{_studentas_8h_source}{}\label{_studentas_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STUDENTAS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STUDENTAS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}includes.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}utility"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Person.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_student___data}{Student\_Data}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_person}{Person}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{double}\ exam;}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_vector___lib}{Vector\_Lib<double>}}\ HW;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_student___data}{Student\_Data}}()\ :\ \mbox{\hyperlink{class_person}{Person}}(),\ exam(0)\ \{\ \}}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_student___data}{Student\_Data}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ surname,\ \textcolor{keywordtype}{double}\ grade,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector___lib}{Vector\_Lib<double>}}\&\ HW\_)\ :\ \mbox{\hyperlink{class_person}{Person}}(student\_name,\ student\_surname),\ exam(grade),\ HW(HW\_)\ \{\}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_student___data}{Student\_Data}}(istream\&\ is);}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//Constructors}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{string}\ vardas()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ student\_name;\}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{string}\ pavarde()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ student\_surname;\}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ egzaminas()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ exam;\}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_vector___lib}{Vector\_Lib<double>}}\ ND()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ HW;\}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//Getters}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ SetName(\textcolor{keywordtype}{string}\ name)\{\ student\_name\ =\ name;\ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ SetSurname(\textcolor{keywordtype}{string}\ surname)\{\ student\_surname\ =\ surname;\ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ SetExam(\ \textcolor{keywordtype}{double}\ grade)\{\ exam\ =\ grade;\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ SetHW\ (\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vector___lib}{Vector\_Lib<double>}}\&\ HW\_)\ \{\ HW\ =\ HW\_;\ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//Setters}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ istream\&\ readStudent(istream\&);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_student___data}{\string~Student\_Data}}();\ \textcolor{comment}{//Deconstructor}}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_student___data}{Student\_Data}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student___data}{Student\_Data}}\&\ Adata);\ \textcolor{comment}{//Copy\ constructor}}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_student___data}{Student\_Data}}\&\ operator=(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student___data}{Student\_Data}}\&\ Adata);\ \ \ \textcolor{comment}{//Copy\ assigment\ operator}}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_student___data}{Student\_Data}}(\mbox{\hyperlink{class_student___data}{Student\_Data}}\&\&\ Adata)\ noexcept\ ;\ \ \ \ \textcolor{comment}{//Move\ constructor}}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_student___data}{Student\_Data}}\&\ operator=(\mbox{\hyperlink{class_student___data}{Student\_Data}}\&\&\ Adata)\ \textcolor{keyword}{noexcept};\ \ \ \ \textcolor{comment}{//Move\ assigment\ operator}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//Rule\ of\ five}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ f();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//Pavercia\ derived\ klase\ Student\_Data\ neabstrakcia,\ nes\ ji\ is\ bazines\ klases\ Person\ paveldi\ abstraktuma}}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{double}\ avg\_grade(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student___data}{Student\_Data}}\&\ Sdata);}
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{double}\ median\_grade(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student___data}{Student\_Data}}\&\ Sdata);}
+\DoxyCodeLine{00045\ \textcolor{comment}{//function\ declarations}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ istream\&\ operator>>(istream\&\ set,\ \mbox{\hyperlink{class_student___data}{Student\_Data}}\&\ Sdata);}
+\DoxyCodeLine{00048\ ostream\&\ operator<<(ostream\&\ print,\ \mbox{\hyperlink{class_student___data}{Student\_Data}}\ Sdata);}
+\DoxyCodeLine{00049\ \textcolor{comment}{//Input/Output\ operators}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

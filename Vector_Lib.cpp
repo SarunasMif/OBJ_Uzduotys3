@@ -257,20 +257,20 @@ void Vector_Lib<V_Lib>::insert(size_t pos, int number, const V_Lib& stuff) {
 }
 
 template <typename V_Lib>
-void Vector_Lib<V_Lib>::resize(int size) {
+void Vector_Lib<V_Lib>::resize(size_t size) {
     if (size < 0) {
         throw out_of_range("Index out of range!");
     } else {
-        int new_capacity = size;
+        size_t new_capacity = size;
 
         V_Lib* temp = new V_Lib[new_capacity];
 
         if (new_capacity > Capacity) {
-            for (int i = 0; i < current; i++) {
+            for (size_t i = 0; i < current; i++) {
                 temp[i] = arr[i];
             }
 
-            for (int i = current; i < new_capacity; i++) {
+            for (size_t i = current; i < new_capacity; i++) {
                 temp[i] = 0;
             }
 
@@ -279,7 +279,7 @@ void Vector_Lib<V_Lib>::resize(int size) {
             Capacity = new_capacity;
             current = new_capacity;
         } else {
-            for (int i = 0; i < new_capacity; i++) {
+            for (size_t i = 0; i < new_capacity; i++) {
                 temp[i] = arr[i];
             }
 
@@ -292,20 +292,20 @@ void Vector_Lib<V_Lib>::resize(int size) {
 }
 
 template <typename V_Lib>
-void Vector_Lib<V_Lib>::resize(int size, int filler) {
+void Vector_Lib<V_Lib>::resize(size_t size, size_t filler) {
     if (size < 0) {
         throw out_of_range("Index out of range!");
     } else {
-        int new_capacity = size;
+        size_t new_capacity = size;
 
         V_Lib* temp = new V_Lib[new_capacity];
 
         if (new_capacity > Capacity) {
-            for (int i = 0; i < current; i++) {
+            for (size_t i = 0; i < current; i++) {
                 temp[i] = arr[i];
             }
 
-            for (int i = current; i < new_capacity; i++) {
+            for (size_t i = current; i < new_capacity; i++) {
                 temp[i] = filler;
             }
 
@@ -314,7 +314,7 @@ void Vector_Lib<V_Lib>::resize(int size, int filler) {
             Capacity = new_capacity;
             current = new_capacity;
         } else {
-            for (int i = 0; i < new_capacity; i++) {
+            for (size_t i = 0; i < new_capacity; i++) {
                 temp[i] = arr[i];
             }
 
